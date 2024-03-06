@@ -1,0 +1,32 @@
+import { Sprite } from "../../../display/Sprite";
+import { Vector2 } from "../../../maths/Vector2";
+import { Vector3 } from "../../../maths/Vector3";
+import { BaseTexture } from "../../../resource/BaseTexture";
+import { MaterialRenderMode } from "../material/Material";
+import { BaseRender } from "../render/BaseRender";
+import { Prefab } from "../../../resource/HierarchyResource";
+export declare class UI3D extends BaseRender {
+    private _shellSprite;
+    set sprite(value: Sprite);
+    get sprite(): Sprite;
+    set prefab(value: Prefab);
+    get prefab(): Prefab;
+    set scale(value: Vector2);
+    get scale(): Vector2;
+    set renderMode(value: MaterialRenderMode);
+    get renderMode(): MaterialRenderMode;
+    set cull(value: number);
+    get cull(): number;
+    get resolutionRate(): number;
+    set resolutionRate(value: number);
+    get billboard(): boolean;
+    set billboard(value: boolean);
+    get enableHit(): boolean;
+    set enableHit(value: boolean);
+    constructor();
+    private _updatePlane;
+    private _parseHit;
+    getUITexture(): BaseTexture;
+    _getCameraDistance(rayOri: Vector3): number;
+    private _transByRotate;
+}

@@ -1,0 +1,43 @@
+import { Animation2DEvent } from "./Animation2DEvent";
+import { Resource } from "../resource/Resource";
+export declare class AnimationClip2D extends Resource {
+    static tween: {
+        Linear: (t: number, b: number, c: number, d: number) => number;
+        Quad_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Quad_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Quad_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        Cubic_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Cubic_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Cubic_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        Quart_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Quart_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Quart_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        Quint_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Quint_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Quint_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        Sine_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Sine_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Sine_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        Expo_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Expo_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Expo_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        Circ_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Circ_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Circ_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        Elastic_EaseIn: (t: number, b: number, c: number, d: number, a: number, p: number) => number;
+        Elastic_EaseOut: (t: number, b: number, c: number, d: number, a: number, p: number) => number;
+        Elastic_EaseInOut: (t: number, b: number, c: number, d: number, a: number, p: number) => number;
+        Back_EaseIn: (t: number, b: number, c: number, d: number, s?: number) => number;
+        Back_EaseOut: (t: number, b: number, c: number, d: number, s?: number) => number;
+        Back_EaseInOut: (t: number, b: number, c: number, d: number, s?: number) => number;
+        Bounce_EaseIn: (t: number, b: number, c: number, d: number) => number;
+        Bounce_EaseOut: (t: number, b: number, c: number, d: number) => number;
+        Bounce_EaseInOut: (t: number, b: number, c: number, d: number) => number;
+        hermiteInterpolate: (outTangent: number, inTangent: number, startValue: number, endValue: number, t: number, dur: number) => number;
+    };
+    islooping: boolean;
+    constructor();
+    duration(): number;
+    hermiteCurveSplineWeight(frameValue: number, frametime: number, frameOutWeight: number, frameOutTangent: number, nextframeValue: number, nextframetime: number, nextframeInweight: number, nextframeIntangent: number, time: number): number;
+    addEvent(event: Animation2DEvent): void;
+}

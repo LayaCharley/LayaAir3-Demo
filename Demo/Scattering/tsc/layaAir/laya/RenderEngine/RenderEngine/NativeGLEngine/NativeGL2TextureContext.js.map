@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/RenderEngine/RenderEngine/NativeGLEngine/NativeGL2TextureContext.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,sBAAsB,EAAE,MAAM,0BAA0B,CAAC;AAelE,MAAM,OAAO,uBAAwB,SAAQ,sBAAsB;IAE/D,YAAY,MAAyB,EAAE,MAAW;QAC9C,KAAK,CAAC,MAAM,EAAE,MAAM,CAAC,CAAC;IAC1B,CAAC;CACJ","file":"NativeGL2TextureContext.js","sourceRoot":"../../../../"}

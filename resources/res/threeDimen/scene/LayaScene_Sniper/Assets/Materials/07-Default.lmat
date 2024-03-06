@@ -1,0 +1,87 @@
+{
+  "version": "LAYAMATERIAL:04",
+  "props": {
+    "textures": [
+      {
+        "path": "../role/texture/renwu/shenti_d_00000.png",
+        "constructParams": [
+          512,
+          512,
+          1,
+          false,
+          false,
+          true
+        ],
+        "propertyParams": {
+          "filterMode": 1,
+          "wrapModeU": 0,
+          "wrapModeV": 0,
+          "anisoLevel": 1
+        },
+        "name": "u_AlbedoTexture"
+      },
+      {
+        "path": "../role/texture/renwu/shenti_n20.jpg",
+        "constructParams": [
+          512,
+          512,
+          1,
+          false,
+          false,
+          true
+        ],
+        "propertyParams": {
+          "filterMode": 1,
+          "wrapModeU": 0,
+          "wrapModeV": 0,
+          "anisoLevel": 1
+        },
+        "name": "u_NormalTexture"
+      },
+      {
+        "name": "u_OcclusionTexture"
+      },
+      {
+        "name": "u_EmissionTexture"
+      },
+      {
+        "name": "u_MetallicGlossTexture"
+      }
+    ],
+    "type": "PBR",
+    "renderQueue": 2000,
+    "s_Cull": 0,
+    "s_Blend": 0,
+    "s_DepthTest": 1,
+    "s_DepthWrite": true,
+    "u_AlbedoColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "u_TilingOffset": [
+      1,
+      1,
+      0,
+      0
+    ],
+    "u_NormalScale": 1,
+    "u_Smoothness": 0.5,
+    "u_SmoothnessScale": 1,
+    "u_EmissionColor": [
+      1,
+      1,
+      1,
+      1
+    ],
+    "u_EmissionIntensity": 1,
+    "u_Metallic": 0,
+    "u_AlphaTestValue": 0.5,
+    "defines": [
+      "ALBEDOTEXTURE",
+      "NEEDTBN",
+      "NORMALTEXTURE"
+    ]
+  }
+}

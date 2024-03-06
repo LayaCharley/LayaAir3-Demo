@@ -1,0 +1,32 @@
+import { Node } from "../../display/Node";
+import { Matrix4x4 } from "../../maths/Matrix4x4";
+import { Quaternion } from "../../maths/Quaternion";
+import { Vector3 } from "../../maths/Vector3";
+import { RenderTexture } from "../../resource/RenderTexture";
+export declare class Utils3D {
+    private static _tempVector3_0;
+    private static _tempVector3_1;
+    private static _tempVector3_2;
+    private static _tempArray16_0;
+    private static _tempArray16_1;
+    private static _tempArray16_2;
+    private static _tempArray16_3;
+    private static _rotationTransformScaleSkinAnimation;
+    static _tempV0: Vector3;
+    static _tempV1: Vector3;
+    static billboardTrans(v0: Vector3, cameraDir: Vector3, cameraUp: Vector3, out: Vector3): void;
+    static PointinTriangle(A: Vector3, B: Vector3, C: Vector3, P: Vector3): boolean;
+    static transformVector3ArrayByQuat(sourceArray: Float32Array, sourceOffset: number, rotation: Quaternion, outArray: Float32Array, outOffset: number): void;
+    static mulMatrixByArray(leftArray: Float32Array, leftOffset: number, rightArray: Float32Array, rightOffset: number, outArray: Float32Array, outOffset: number): void;
+    static mulMatrixByArrayFast(leftArray: Float32Array, leftOffset: number, rightArray: Float32Array, rightOffset: number, outArray: Float32Array, outOffset: number): void;
+    static mulMatrixByArrayAndMatrixFast(leftArray: Float32Array, leftOffset: number, rightMatrix: Matrix4x4, outArray: Float32Array, outOffset: number): void;
+    static createAffineTransformationArray(tX: number, tY: number, tZ: number, rX: number, rY: number, rZ: number, rW: number, sX: number, sY: number, sZ: number, outArray: Float32Array, outOffset: number): void;
+    static transformVector3ArrayToVector3ArrayCoordinate(source: Float32Array, sourceOffset: number, transform: Matrix4x4, result: Float32Array, resultOffset: number): void;
+    static transformVector3ArrayToVector3ArrayNormal(source: Float32Array, sourceOffset: number, transform: Matrix4x4, result: Float32Array, resultOffset: number): void;
+    static getURLVerion(url: string): string;
+    static transformQuat(source: Vector3, rotation: Float32Array, out: Vector3): void;
+    static quaternionWeight(f: Quaternion, weight: number, e: Quaternion): void;
+    static _getNodeByHierarchyPath(rootSprite: Node, invPath: number[]): Node;
+    static _getParentNodeByHierarchyPath(rootSprite: Node, path: number[]): Node;
+    static uint8ArrayToArrayBuffer(rendertexture: RenderTexture): String;
+}

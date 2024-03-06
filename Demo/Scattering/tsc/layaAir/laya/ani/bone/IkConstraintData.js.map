@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/ani/bone/IkConstraintData.ts"],"names":[],"mappings":"AAGA,MAAM,OAAO,gBAAgB;IAY5B;QARA,cAAS,GAAa,EAAE,CAAC;QACzB,kBAAa,GAAW,CAAC,CAAC;QAC1B,QAAG,GAAW,CAAC,CAAC;QAChB,YAAO,GAAY,IAAI,CAAC;QACxB,oBAAe,GAAW,CAAC,CAAC,CAAC;QAC7B,eAAU,GAAa,EAAE,CAAC;IAK1B,CAAC;CAED","file":"IkConstraintData.js","sourceRoot":"../../../"}

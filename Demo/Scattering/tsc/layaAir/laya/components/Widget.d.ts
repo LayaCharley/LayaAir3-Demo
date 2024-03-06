@@ -1,0 +1,31 @@
+import { Component } from "./Component";
+export declare class Widget extends Component {
+    static EMPTY: Widget;
+    private _top;
+    private _bottom;
+    private _left;
+    private _right;
+    private _centerX;
+    private _centerY;
+    constructor();
+    onReset(): void;
+    protected _onEnable(): void;
+    protected _onDisable(): void;
+    protected _onAdded(): void;
+    protected _onParentResize(): void;
+    resetLayoutX(): boolean;
+    resetLayoutY(): boolean;
+    resetLayout(): void;
+    get top(): number;
+    set top(value: number);
+    get bottom(): number;
+    set bottom(value: number);
+    get left(): number;
+    set left(value: number);
+    get right(): number;
+    set right(value: number);
+    get centerX(): number;
+    set centerX(value: number);
+    get centerY(): number;
+    set centerY(value: number);
+}

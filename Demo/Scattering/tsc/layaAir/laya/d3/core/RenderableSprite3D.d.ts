@@ -1,0 +1,30 @@
+import { Sprite3D } from "./Sprite3D";
+import { ShaderDefine } from "../../RenderEngine/RenderShader/ShaderDefine";
+export declare class RenderableSprite3D extends Sprite3D {
+    static SHADERDEFINE_RECEIVE_SHADOW: ShaderDefine;
+    static SAHDERDEFINE_LIGHTMAP: ShaderDefine;
+    static SHADERDEFINE_LIGHTMAP_DIRECTIONAL: ShaderDefine;
+    static LIGHTMAPSCALEOFFSET: number;
+    static LIGHTMAP: number;
+    static LIGHTMAP_DIRECTION: number;
+    static PICKCOLOR: number;
+    static REFLECTIONCUBE_PROBEPOSITION: number;
+    static REFLECTIONCUBE_PROBEBOXMAX: number;
+    static REFLECTIONCUBE_PROBEBOXMIN: number;
+    static VOLUMETRICGI_PROBECOUNTS: number;
+    static VOLUMETRICGI_PROBESTEPS: number;
+    static VOLUMETRICGI_PROBESTARTPOS: number;
+    static VOLUMETRICGI_PROBEPARAMS: number;
+    static VOLUMETRICGI_IRRADIANCE: number;
+    static VOLUMETRICGI_DISTANCE: number;
+    static SHADERDEFINE_MORPHTARGET: ShaderDefine;
+    static SHADERDEFINE_MORPHTARGET_POSITION: ShaderDefine;
+    static SHADERDEFINE_MORPHTARGET_NORMAL: ShaderDefine;
+    static SHADERDEFINE_MORPHTARGET_TANGENT: ShaderDefine;
+    static REFLECTIONTEXTURE: number;
+    static REFLECTIONCUBE_HDR_PARAMS: number;
+    constructor(name: string);
+    protected _onInActive(): void;
+    protected _onActive(): void;
+    protected _onActiveInScene(): void;
+}

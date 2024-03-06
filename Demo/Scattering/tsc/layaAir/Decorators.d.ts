@@ -1,0 +1,65 @@
+export declare type EnumDescriptor = {
+    name: string;
+    value: any;
+    extend?: EnumDescriptor;
+    [index: string]: any;
+}[] | any[] | Object | string;
+export interface PropertyDescriptor {
+    name: string;
+    type: string | Function | Object | [string | Function] | ["Record", string | Function];
+    caption: string;
+    tips: string;
+    catalog: string;
+    catalogCaption: string;
+    catalogOrder: number;
+    inspector: string;
+    hidden: boolean | string;
+    readonly: boolean | string;
+    validator: string;
+    serializable: boolean;
+    multiline: boolean;
+    password: boolean;
+    submitOnTyping: boolean;
+    prompt: string;
+    enumSource: EnumDescriptor;
+    reverseBool: boolean;
+    nullable: boolean;
+    min: number;
+    max: number;
+    range: [number, number];
+    step: number;
+    fractionDigits: number;
+    percentage: boolean;
+    fixedLength: boolean;
+    arrayActions: Array<"append" | "insert" | "delete" | "move">;
+    elementProps: Partial<PropertyDescriptor>;
+    showAlpha: boolean;
+    defaultColor: any;
+    colorNullable: boolean;
+    hideHeader: boolean;
+    createObjectMenu: Array<string>;
+    isAsset?: boolean;
+    assetTypeFilter: string;
+    useAssetPath: boolean;
+    allowInternalAssets: boolean;
+    position: string;
+    "private": boolean;
+    addIndent: number;
+    allowMultipleObjects: boolean;
+    hideInDeriveType: boolean;
+    onChange: string;
+    options: Record<string, any>;
+}
+export interface TypeDescriptor {
+    caption: string;
+    menu: string;
+    icon: string;
+    properties: Array<Partial<PropertyDescriptor>>;
+    inspector: string;
+    worldType: "2d" | "3d" | null;
+    options: Record<string, any>;
+}
+export declare function regClass(assetId?: string): any;
+export declare function classInfo(info?: Partial<TypeDescriptor>): any;
+export declare function runInEditor(constructor: Function): void;
+export declare function property(info: string | Array<any> | Function | Object | Partial<PropertyDescriptor>): any;

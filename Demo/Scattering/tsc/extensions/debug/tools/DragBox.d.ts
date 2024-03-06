@@ -1,0 +1,30 @@
+import { Sprite } from "laya/display/Sprite";
+import { Event } from "laya/events/Event";
+export declare class DragBox extends Sprite {
+    private static BLOCK_WIDTH;
+    private _box;
+    private _left;
+    private _right;
+    private _top;
+    private _bottom;
+    private _topLeft;
+    private _topRight;
+    private _bottomLeft;
+    private _bottomRight;
+    private _target;
+    private _lastPoint;
+    private _currDir;
+    private _type;
+    constructor(type: number);
+    private fixScale;
+    private onMouseDown;
+    protected onMouseUp(e: Event): void;
+    private initFixScale;
+    protected onMouseMove(e: Event): void;
+    private drawBorder;
+    private drawBlock;
+    setTarget(target: Sprite): void;
+    refresh(): void;
+    private changePoint;
+    private changeSize;
+}

@@ -1,0 +1,403 @@
+{
+  "_$type": "Animator",
+  "cullingMode": 0,
+  "controllerLayers": [
+    {
+      "_$type": "AnimatorControllerLayer",
+      "name": "Base Layer",
+      "states": [
+        {
+          "id": "-1",
+          "name": "进入",
+          "nexts": [],
+          "soloTransitions": [
+            {
+              "id": 0
+            }
+          ],
+          "scripts": [],
+          "x": -131.98498721275809,
+          "y": 39.09949430876776
+        },
+        {
+          "id": "-2",
+          "name": "任何状态",
+          "x": 697,
+          "scripts": [],
+          "y": 80.92840410433153
+        },
+        {
+          "id": 0,
+          "name": "PickUp",
+          "clip": {
+            "_$uuid": "anim/PickUp.lani"
+          },
+          "x": -11.17995714295282,
+          "y": 34.67448584748593,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 1,
+          "name": "PotionDrink",
+          "clip": {
+            "_$uuid": "anim/PotionDrink.lani"
+          },
+          "x": -21.469145374349047,
+          "y": 96.17574243944165,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 2,
+          "name": "VictoryMaintain",
+          "clip": {
+            "_$uuid": "anim/VictoryMaintain.lani"
+          },
+          "x": 481.7042354294026,
+          "y": -18.775879355717848,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 3,
+          "name": "VictoryStart",
+          "clip": {
+            "_$uuid": "anim/VictoryStart.lani"
+          },
+          "x": -8.235488391599354,
+          "y": 330.0954181678806,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 4,
+          "name": "WalkForward",
+          "clip": {
+            "_$uuid": "anim/WalkForward.lani"
+          },
+          "x": -19.58474720632661,
+          "y": 220.296918324957,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 5,
+          "name": "JumpUpAttack",
+          "clip": {
+            "_$uuid": "anim/JumpUpAttack.lani"
+          },
+          "x": -22.422798887667838,
+          "y": 163.65827736583037,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 6,
+          "name": "JumpUp",
+          "clip": {
+            "_$uuid": "anim/JumpUp.lani"
+          },
+          "x": 342.11096954593853,
+          "y": 145.14884991751822,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 7,
+          "name": "JumpStart",
+          "clip": {
+            "_$uuid": "anim/JumpStart.lani"
+          },
+          "x": 504.3349937272534,
+          "y": 103.1931084671348,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 8,
+          "name": "JumpEnd",
+          "clip": {
+            "_$uuid": "anim/JumpEnd.lani"
+          },
+          "x": 174.51681133813835,
+          "y": 148.55543175364514,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 9,
+          "name": "JumpAirAttack",
+          "clip": {
+            "_$uuid": "anim/JumpAirAttack.lani"
+          },
+          "x": 333.57873477804793,
+          "y": 312.29234722124085,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 10,
+          "name": "JumpAir",
+          "clip": {
+            "_$uuid": "anim/JumpAir.lani"
+          },
+          "x": 342.30682057733776,
+          "y": 87.86578863288511,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 11,
+          "name": "Interact",
+          "clip": {
+            "_$uuid": "anim/Interact.lani"
+          },
+          "x": 5.939511814831967,
+          "y": 435.37271444830134,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 12,
+          "name": "Idle03",
+          "clip": {
+            "_$uuid": "anim/Idle03.lani"
+          },
+          "x": 347.3287841687063,
+          "y": 31.80086451299691,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 13,
+          "name": "Idle02",
+          "clip": {
+            "_$uuid": "anim/Idle02.lani"
+          },
+          "x": 347.95851210045845,
+          "y": 199.61749638685293,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 14,
+          "name": "Idle01",
+          "clip": {
+            "_$uuid": "anim/Idle01.lani"
+          },
+          "x": 177.5438887229681,
+          "y": 425.6722775319909,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 15,
+          "name": "GetHit",
+          "clip": {
+            "_$uuid": "anim/GetHit.lani"
+          },
+          "x": 339.4054274563934,
+          "y": -23.204796164963696,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 16,
+          "name": "Dizzy",
+          "clip": {
+            "_$uuid": "anim/Dizzy.lani"
+          },
+          "x": 185.19304035461653,
+          "y": 202.71662721217288,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 17,
+          "name": "DieRecovery",
+          "clip": {
+            "_$uuid": "anim/DieRecovery.lani"
+          },
+          "x": 166.6912095135568,
+          "y": 371.13475641614576,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 18,
+          "name": "Die",
+          "clip": {
+            "_$uuid": "anim/Die.lani"
+          },
+          "x": 192.63936159469256,
+          "y": 95.35235741892228,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 19,
+          "name": "DefendStart",
+          "clip": {
+            "_$uuid": "anim/DefendStart.lani"
+          },
+          "x": 160.77055409304515,
+          "y": -17.71342773729843,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 20,
+          "name": "DefendMaintain",
+          "clip": {
+            "_$uuid": "anim/DefendMaintain.lani"
+          },
+          "x": -14.96510059318198,
+          "y": 490.67170346402224,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 21,
+          "name": "DefendHit",
+          "clip": {
+            "_$uuid": "anim/DefendHit.lani"
+          },
+          "x": -12.254930579057778,
+          "y": 274.8337279282697,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 22,
+          "name": "BattleWalkRight",
+          "clip": {
+            "_$uuid": "anim/BattleWalkRight.lani"
+          },
+          "x": -28.675022146016488,
+          "y": -19.110699899330122,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 23,
+          "name": "BattleWalkLeft",
+          "clip": {
+            "_$uuid": "anim/BattleWalkLeft.lani"
+          },
+          "x": 338.79417058893523,
+          "y": 469.2867088360676,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 24,
+          "name": "BattleWalkForward",
+          "clip": {
+            "_$uuid": "anim/BattleWalkForward.lani"
+          },
+          "x": 327.33100126116153,
+          "y": 364.15846615939415,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 25,
+          "name": "BattleWalkBack",
+          "clip": {
+            "_$uuid": "anim/BattleWalkBack.lani"
+          },
+          "x": 319.7040957963961,
+          "y": 413.3872645694253,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 26,
+          "name": "BattleRunForward",
+          "clip": {
+            "_$uuid": "anim/BattleRunForward.lani"
+          },
+          "x": 478.28394230314393,
+          "y": 40.92778497256372,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 27,
+          "name": "Attack04",
+          "clip": {
+            "_$uuid": "anim/Attack04.lani"
+          },
+          "x": 172.10428545211852,
+          "y": 38.473519489952736,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 28,
+          "name": "Attack03Start",
+          "clip": {
+            "_$uuid": "anim/Attack03Start.lani"
+          },
+          "x": -17.201717004413048,
+          "y": 385.59208985859885,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 29,
+          "name": "Attack03Maintain",
+          "clip": {
+            "_$uuid": "anim/Attack03Maintain.lani"
+          },
+          "x": 160.7470820290219,
+          "y": 254.53423759742753,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 30,
+          "name": "Attack02Start",
+          "clip": {
+            "_$uuid": "anim/Attack02Start.lani"
+          },
+          "x": 333.95547985352306,
+          "y": 253.42707772116546,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 31,
+          "name": "Attack02Maintain",
+          "clip": {
+            "_$uuid": "anim/Attack02Maintain.lani"
+          },
+          "x": 490.4038238330629,
+          "y": 163.26759290832703,
+          "clipEnd": 1,
+          "speed": 1
+        },
+        {
+          "id": 32,
+          "name": "Attack01",
+          "clip": {
+            "_$uuid": "anim/Attack01.lani"
+          },
+          "x": 187.04090597550552,
+          "y": 316.66668417428053,
+          "clipEnd": 1,
+          "speed": 1
+        }
+      ],
+      "defaultStateName": "PickUp",
+      "stageX": 255.31289648868375,
+      "stageY": 271.53696701578247,
+      "stageScale": 0.6000000000000001,
+      "playOnWake": true,
+      "blendingMode": 0,
+      "defaultWeight": 1
+    }
+  ],
+  "layerW": 150
+}

@@ -1,0 +1,33 @@
+import { Component } from "./Component";
+import { Event } from "../events/Event";
+import { Collision } from "../d3/physics/Collision";
+import { PhysicsComponent } from "../d3/physics/PhysicsComponent";
+import { ColliderBase } from "../physics/ColliderBase";
+import { Sprite3D } from "../d3/core/Sprite3D";
+import { Sprite } from "../display/Sprite";
+export declare class Script extends Component {
+    owner: Sprite | Sprite3D;
+    protected setupScript(): void;
+    onTriggerEnter?(other: PhysicsComponent | ColliderBase, self?: ColliderBase, contact?: any): void;
+    onTriggerStay?(other: PhysicsComponent | ColliderBase, self?: ColliderBase, contact?: any): void;
+    onTriggerExit?(other: PhysicsComponent | ColliderBase, self?: ColliderBase, contact?: any): void;
+    onCollisionEnter?(collision: Collision): void;
+    onCollisionStay?(collision: Collision): void;
+    onCollisionExit?(collision: Collision): void;
+    onJointBreak?(): void;
+    onMouseDown?(evt: Event): void;
+    onMouseUp?(evt: Event): void;
+    onRightMouseDown?(evt: Event): void;
+    onRightMouseUp?(evt: Event): void;
+    onMouseMove?(evt: Event): void;
+    onMouseOver?(evt: Event): void;
+    onMouseOut?(evt: Event): void;
+    onMouseDrag?(evt: Event): void;
+    onMouseDragEnd?(evt: Event): void;
+    onMouseClick?(evt: Event): void;
+    onMouseDoubleClick?(evt: Event): void;
+    onMouseRightClick?(evt: Event): void;
+    onKeyDown?(evt: Event): void;
+    onKeyPress?(evt: Event): void;
+    onKeyUp?(evt: Event): void;
+}

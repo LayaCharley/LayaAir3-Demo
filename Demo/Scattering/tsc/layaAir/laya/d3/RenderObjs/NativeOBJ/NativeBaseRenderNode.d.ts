@@ -1,0 +1,36 @@
+import { IBaseRenderNode } from "../../../RenderEngine/RenderInterface/RenderPipelineInterface/IBaseRenderNode";
+import { BaseRender } from "../../core/render/BaseRender";
+import { Transform3D } from "../../core/Transform3D";
+import { Bounds } from "../../math/Bounds";
+export declare class NativeBaseRenderNode implements IBaseRenderNode {
+    private _nativeObj;
+    private _bounds;
+    private _geometryBounds;
+    private _transform;
+    constructor();
+    set boundsChange(value: boolean);
+    get boundsChange(): boolean;
+    set layer(value: number);
+    get layer(): number;
+    get renderId(): number;
+    set renderId(value: number);
+    get receiveShadow(): boolean;
+    set receiveShadow(value: boolean);
+    get castShadow(): boolean;
+    set castShadow(value: boolean);
+    get bounds(): Bounds;
+    set bounds(value: Bounds);
+    sortingFudge: number;
+    get distanceForSort(): number;
+    set distanceForSort(value: number);
+    get transform(): Transform3D;
+    set transform(value: Transform3D);
+    get owner(): BaseRender | null;
+    set owner(value: BaseRender | null);
+    get geometryBounds(): Bounds | null;
+    set geometryBounds(value: Bounds | null);
+    get renderbitFlag(): number;
+    set renderbitFlag(value: number | null);
+    get staticMask(): number;
+    set staticMask(value: number | null);
+}

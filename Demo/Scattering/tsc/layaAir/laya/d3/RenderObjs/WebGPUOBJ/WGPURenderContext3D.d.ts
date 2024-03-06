@@ -1,0 +1,32 @@
+import { WebGPURenderPassDescriptor } from "../../../RenderEngine/RenderEngine/WebGPUEngine/WebGPURenderPassDescriptor";
+import { WebGPURenderCommandEncoder } from "../../../RenderEngine/RenderEngine/WebGPUEngine/WebGPURenderCommandEncoder";
+import { IRenderTarget } from "../../../RenderEngine/RenderInterface/IRenderTarget";
+import { IRenderContext3D, PipelineMode } from "../../../RenderEngine/RenderInterface/RenderPipelineInterface/IRenderContext3D";
+import { Vector4 } from "../../../maths/Vector4";
+import { Viewport } from "../../math/Viewport";
+import { WGPURenderElementObJ } from "./WGPURenderElementObJ";
+import { WGPUShaderData } from "./WGPUShaderData";
+import { WebGPUInternalRT } from "../../../RenderEngine/RenderEngine/WebGPUEngine/WebGPUInternalRT";
+export declare class WGPURenderContext3D implements IRenderContext3D {
+    device: GPUDevice;
+    private _destTarget;
+    get destTarget(): IRenderTarget;
+    set destTarget(value: IRenderTarget);
+    internalRT: WebGPUInternalRT;
+    viewPort: Viewport;
+    scissor: Vector4;
+    invertY: boolean;
+    pipelineMode: PipelineMode;
+    cameraShaderData: WGPUShaderData;
+    sceneID: number;
+    sceneShaderData: WGPUShaderData;
+    cameraUpdateMark: number;
+    globalShaderData: WGPUShaderData;
+    commandEncoder: WebGPURenderCommandEncoder;
+    renderPassDec: WebGPURenderPassDescriptor;
+    constructor();
+    applyContext(cameraUpdateMark: number): void;
+    drawRenderElement(renderelemt: WGPURenderElementObJ): void;
+    end(): void;
+    private _startRender;
+}

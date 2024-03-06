@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/RenderEngine/RenderShader/ShaderDefine.ts"],"names":[],"mappings":"AAGA,MAAM,OAAO,YAAY;IAiBxB,YAAY,KAAa,EAAE,KAAa;QACvC,IAAI,CAAC,MAAM,GAAG,KAAK,CAAC;QACpB,IAAI,CAAC,MAAM,GAAG,KAAK,CAAC;IACrB,CAAC;;AAdM,4BAAe,GAAoC,EAAE,CAAC","file":"ShaderDefine.js","sourceRoot":"../../../"}

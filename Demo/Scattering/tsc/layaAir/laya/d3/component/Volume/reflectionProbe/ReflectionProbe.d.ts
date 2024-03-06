@@ -1,0 +1,71 @@
+import { TextureDecodeFormat } from "../../../../RenderEngine/RenderEnum/TextureDecodeFormat";
+import { Bounds } from "../../../math/Bounds";
+import { TextureCube } from "../../../../resource/TextureCube";
+import { Volume } from "../Volume";
+import { SphericalHarmonicsL2 } from "../../../graphics/SphericalHarmonicsL2";
+import { ShaderData } from "../../../../RenderEngine/RenderShader/ShaderData";
+import { AmbientMode } from "../../../core/scene/AmbientMode";
+import { Color } from "../../../../maths/Color";
+import { Vector3 } from "../../../../maths/Vector3";
+import { Vector4 } from "../../../../maths/Vector4";
+export declare enum ReflectionProbeMode {
+    off = 0,
+    simple = 1
+}
+export declare class ReflectionProbe extends Volume {
+    static TEMPVECTOR3: Vector3;
+    static defaultTextureHDRDecodeValues: Vector4;
+    private _boxProjection;
+    protected _bounds: Bounds;
+    protected _importance: number;
+    private _ambientColor;
+    private _ambientSH;
+    private _ambientIntensity;
+    private _iblTex;
+    private _iblTexRGBD;
+    private _reflectionIntensity;
+    _isScene: boolean;
+    _updateMark: number;
+    constructor();
+    get boxProjection(): boolean;
+    set boxProjection(value: boolean);
+    get importance(): number;
+    set importance(value: number);
+    get ambientIntensity(): number;
+    set ambientIntensity(value: number);
+    get reflectionIntensity(): number;
+    set reflectionIntensity(value: number);
+    get bounds(): Bounds;
+    set boundsMax(value: Vector3);
+    get boundsMax(): Vector3;
+    set boundsMin(value: Vector3);
+    get boundsMin(): Vector3;
+    get probePosition(): Vector3;
+    get ambientColor(): Color;
+    set ambientColor(value: Color);
+    get ambientSH(): Float32Array;
+    set ambientSH(value: Float32Array);
+    get ambientMode(): AmbientMode;
+    set ambientMode(value: AmbientMode);
+    get iblTex(): TextureCube;
+    set iblTex(value: TextureCube);
+    get iblTexRGBD(): boolean;
+    set iblTexRGBD(value: boolean);
+    applyReflectionShaderData(shaderData: ShaderData): void;
+    protected _onEnable(): void;
+    protected _onDisable(): void;
+    protected _onDestroy(): void;
+    private _reflectionTexture;
+    private _reflectionHDRParams;
+    private _reflectionDecodeFormat;
+    get reflectionTexture(): TextureCube;
+    set reflectionTexture(value: TextureCube);
+    get customReflection(): TextureCube;
+    set customReflection(value: TextureCube);
+    get reflectionHDRParams(): Vector4;
+    get reflectionDecodingFormat(): TextureDecodeFormat;
+    set reflectionDecodingFormat(value: TextureDecodeFormat);
+    get ambientSphericalHarmonics(): SphericalHarmonicsL2;
+    set ambientSphericalHarmonics(value: SphericalHarmonicsL2);
+    setGradientAmbient(skyColor: Vector3, equatorColor: Vector3, groundColor: Vector3): void;
+}

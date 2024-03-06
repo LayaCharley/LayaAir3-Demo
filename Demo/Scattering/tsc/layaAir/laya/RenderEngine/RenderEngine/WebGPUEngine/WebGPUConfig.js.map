@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/RenderEngine/RenderEngine/WebGPUEngine/WebGPUConfig.ts"],"names":[],"mappings":"AAGA,MAAM,OAAO,YAAY;IAAzB;QAQI,qBAAgB,GAAyB,EAAE,CAAC;QAQ5C,cAAS,GAAsB,eAAe,CAAC;QAI/C,UAAK,GAA0B,eAAe,CAAC,iBAAiB,GAAG,eAAe,CAAC,QAAQ,CAAC;QAI5F,eAAU,GAAI,MAAM,CAAsB;IAG9C,CAAC;CAAA","file":"WebGPUConfig.js","sourceRoot":"../../../../"}

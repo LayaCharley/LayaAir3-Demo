@@ -1,0 +1,31 @@
+import { Sprite3D } from "../Sprite3D";
+import { ShadowMode } from "./ShadowMode";
+import { LightMode } from "./Light";
+import { Color } from "../../../maths/Color";
+import { Matrix4x4 } from "../../../maths/Matrix4x4";
+export declare class LightSprite extends Sprite3D {
+    get color(): Color;
+    set color(value: Color);
+    get mode(): LightMode;
+    set mode(value: LightMode);
+    get intensity(): number;
+    set intensity(value: number);
+    get shadowMode(): ShadowMode;
+    set shadowMode(value: ShadowMode);
+    get shadowDistance(): number;
+    set shadowDistance(value: number);
+    get shadowResolution(): number;
+    set shadowResolution(value: number);
+    get shadowDepthBias(): number;
+    set shadowDepthBias(value: number);
+    get shadowNormalBias(): number;
+    set shadowNormalBias(value: number);
+    get shadowStrength(): number;
+    set shadowStrength(value: number);
+    get shadowNearPlane(): number;
+    set shadowNearPlane(value: number);
+    get lightmapBakedType(): number;
+    set lightmapBakedType(value: number);
+    get lightWorldMatrix(): Matrix4x4;
+    constructor();
+}

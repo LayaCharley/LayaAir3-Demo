@@ -1,0 +1,36 @@
+import { Material } from "../material/Material";
+import { BaseTexture } from "../../../resource/BaseTexture";
+import { ShaderDefine } from "../../../RenderEngine/RenderShader/ShaderDefine";
+import { Color } from "../../../maths/Color";
+import { Vector4 } from "../../../maths/Vector4";
+export declare class ShurikenParticleMaterial extends Material {
+    static RENDERMODE_ALPHABLENDED: number;
+    static RENDERMODE_ADDTIVE: number;
+    static SHADERDEFINE_ADDTIVEFOG: ShaderDefine;
+    static defaultMaterial: ShurikenParticleMaterial;
+    get color(): Color;
+    set color(value: Color);
+    get tilingOffset(): Vector4;
+    set tilingOffset(value: Vector4);
+    get texture(): BaseTexture;
+    set texture(value: BaseTexture);
+    constructor();
+    clone(): any;
+    set renderMode(value: number);
+    get tilingOffsetX(): number;
+    set tilingOffsetX(x: number);
+    get tilingOffsetY(): number;
+    set tilingOffsetY(y: number);
+    get tilingOffsetZ(): number;
+    set tilingOffsetZ(z: number);
+    get tilingOffsetW(): number;
+    set tilingOffsetW(w: number);
+    get colorR(): number;
+    set colorR(value: number);
+    get colorG(): number;
+    set colorG(value: number);
+    get colorB(): number;
+    set colorB(value: number);
+    get colorA(): number;
+    set colorA(value: number);
+}

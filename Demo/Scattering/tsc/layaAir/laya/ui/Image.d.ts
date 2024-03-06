@@ -1,0 +1,30 @@
+import { Texture } from "../resource/Texture";
+import { AutoBitmap } from "./AutoBitmap";
+import { UIComponent } from "./UIComponent";
+export declare class Image extends UIComponent {
+    protected _skin: string;
+    protected _group: string;
+    protected _useSourceSize: boolean;
+    _graphics: AutoBitmap;
+    constructor(skin?: string | null);
+    dispose(): void;
+    protected createChildren(): void;
+    get skin(): string;
+    set skin(value: string);
+    _setSkin(url: string): Promise<void>;
+    get source(): Texture;
+    set source(value: Texture);
+    get color(): string;
+    set color(value: string);
+    get group(): string;
+    set group(value: string);
+    get useSourceSize(): boolean;
+    set useSourceSize(value: boolean);
+    protected measureWidth(): number;
+    protected measureHeight(): number;
+    _setWidth(value: number): void;
+    _setHeight(value: number): void;
+    get sizeGrid(): string;
+    set sizeGrid(value: string);
+    set_dataSource(value: any): void;
+}

@@ -1,0 +1,30 @@
+import { StatToggleUIParams, StatUIParams } from "./Stat";
+import { IStatRender } from "./IStatRender";
+export declare class StatUI extends IStatRender {
+    private static _fontSize;
+    private static _toggleSize;
+    private _txt;
+    private _leftText;
+    private _canvas;
+    private _ctx;
+    private _first;
+    private _vx;
+    private _width;
+    private _height;
+    private _view;
+    private _toggleView;
+    show(x: number, y: number, views: Array<StatUIParams>): void;
+    showToggle(x: number, y: number, views: Array<StatToggleUIParams>): void;
+    private _toggleSprite;
+    private _toggletxt;
+    private _checkBoxArray;
+    private _toggleleftText;
+    private createToggleUI;
+    private createUI;
+    enable(): void;
+    hide(): void;
+    set_onclick(fn: (this: GlobalEventHandlers, ev: MouseEvent) => any): void;
+    loop(): void;
+    private renderInfo;
+    renderNotCanvas(ctx: any, x: number, y: number): void;
+}

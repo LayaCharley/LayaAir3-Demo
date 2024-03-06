@@ -1,0 +1,30 @@
+import { Color } from "../../../maths/Color";
+import { Vector4 } from "../../../maths/Vector4";
+import { ShaderDefine } from "../../../RenderEngine/RenderShader/ShaderDefine";
+import { BaseTexture } from "../../../resource/BaseTexture";
+import { Material } from "./Material";
+export declare class UnlitMaterial extends Material {
+    static SHADERDEFINE_ALBEDOTEXTURE: ShaderDefine;
+    static SHADERDEFINE_ENABLEVERTEXCOLOR: ShaderDefine;
+    static ALBEDOTEXTURE: number;
+    static ALBEDOCOLOR: number;
+    static TILINGOFFSET: number;
+    private _albedoIntensity;
+    get albedoColor(): Color;
+    set albedoColor(value: Color);
+    get albedoIntensity(): number;
+    set albedoIntensity(value: number);
+    get albedoTexture(): BaseTexture;
+    set albedoTexture(value: BaseTexture);
+    get tilingOffset(): Vector4;
+    set tilingOffset(value: Vector4);
+    get enableVertexColor(): boolean;
+    set enableVertexColor(value: boolean);
+    constructor();
+    clone(): any;
+    static RENDERMODE_OPAQUE: number;
+    static RENDERMODE_CUTOUT: number;
+    static RENDERMODE_TRANSPARENT: number;
+    static RENDERMODE_ADDTIVE: number;
+    set renderMode(value: number);
+}

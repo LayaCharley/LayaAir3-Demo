@@ -1,0 +1,9 @@
+import "./loaders/AnimationClipLoader";
+import "./loaders/CubemapLoader";
+import "./loaders/MaterialLoader";
+import "./loaders/MeshLoader";
+import "./loaders/HierarchyParserV2";
+import "./loaders/AvatarMaskLoader";
+import "./loaders/ShaderLoader";
+import "./loaders/GLSLLoader";
+import "./loaders/AnimationControllerLoader";

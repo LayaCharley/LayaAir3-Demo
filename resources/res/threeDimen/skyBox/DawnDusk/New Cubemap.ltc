@@ -1,0 +1,14 @@
+{
+  "front": "res://57eedac6-7e11-4b9c-b822-5e855f8bfd24",
+  "back": "res://635815ba-76ab-46a9-a694-87665b22f4a8",
+  "left": "res://1218e6a1-78b9-4509-ae03-dcf85187c5da",
+  "right": "res://057e8c98-4338-47b4-82a4-1e23d840e99d",
+  "up": "New Cubemap_PositiveY.png",
+  "down": "New Cubemap_NegativeY.png",
+  "cubemapSize": 2,
+  "cubemapFileMode": "R32G32B32",
+  "filterMode": 1,
+  "top": "res://2023cad7-cd5e-465f-87e4-e310d0dbc65e",
+  "bottom": "res://984abc23-26e7-48ba-bc25-6d92046fc771",
+  "sRGB": false
+}

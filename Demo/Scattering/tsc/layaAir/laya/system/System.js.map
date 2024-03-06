@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/system/System.ts"],"names":[],"mappings":"AAGA,MAAM,OAAO,MAAM;IAOf,MAAM,CAAC,gBAAgB,CAAC,IAAY,EAAE,QAAa;QAC9C,MAAc,CAAC,IAAI,CAAC,IAAI,CAAC,GAAG,QAAQ,CAAC;QACtC,IAAI,GAAG,GAAW,IAAI,GAAG,WAAW,CAAC;QACrC,MAAM,CAAC,MAAM,CAAC,CAAC,GAAG,CAAC,CAAC;IACxB,CAAC;CACJ","file":"System.js","sourceRoot":"../../"}
