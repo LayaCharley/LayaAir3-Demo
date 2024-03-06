@@ -1,0 +1,32 @@
+import { DebugInfoLayer } from "./DebugInfoLayer";
+import { Sprite } from "laya/display/Sprite";
+import { Node } from "laya/display/Node";
+export declare class NodeInfosItem extends Sprite {
+    static NodeInfoContainer: DebugInfoLayer;
+    static init(): void;
+    constructor();
+    private _infoTxt;
+    static showValues: any[];
+    private static _nodeInfoDic;
+    static getNodeInfoByNode(node: Sprite): NodeInfosItem;
+    static hideAllInfos(): void;
+    removeSelf(): Node;
+    showToUI(): void;
+    randomAPos(r: number): void;
+    findOkPos(): void;
+    isPosOk(): boolean;
+    private static _disBoundRec;
+    static showNodeInfo(node: Sprite): void;
+    static showDisInfos(node: Sprite): void;
+    static apdtTxtInfoPoss(node: Sprite): void;
+    private static clearRelations;
+    static updateRelations(): void;
+    private static _txts;
+    private _tar;
+    private static _nodePoint;
+    static getNodeValue(node: Sprite, key: string): string;
+    showInfo(node: Sprite): void;
+    fresh(): void;
+    clearMe(): void;
+    recover(): void;
+}

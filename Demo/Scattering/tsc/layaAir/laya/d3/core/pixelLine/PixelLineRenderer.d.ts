@@ -1,0 +1,30 @@
+import { Component } from "../../../components/Component";
+import { Color } from "../../../maths/Color";
+import { Vector3 } from "../../../maths/Vector3";
+import { Material } from "../material/Material";
+import { BaseRender } from "../render/BaseRender";
+import { PixelLineData } from "./PixelLineData";
+export declare class PixelLineRenderer extends BaseRender {
+    private _isRenderActive;
+    private _isInRenders;
+    private _needUpdatelines;
+    constructor();
+    private _lines;
+    get pixelLinesDatas(): PixelLineData[];
+    set pixelLinesDatas(value: PixelLineData[]);
+    get maxLineCount(): number;
+    set maxLineCount(value: number);
+    get lineCount(): number;
+    protected _onAdded(): void;
+    protected _onEnable(): void;
+    protected _onDisable(): void;
+    _changeRenderObjects(index: number, material: Material): void;
+    addLine(startPosition: Vector3, endPosition: Vector3, startColor: Color, endColor: Color): void;
+    addLines(lines: PixelLineData[]): void;
+    removeLine(index: number): void;
+    setLine(index: number, startPosition: Vector3, endPosition: Vector3, startColor: Color, endColor: Color): void;
+    getLine(index: number, out: PixelLineData): void;
+    clear(): void;
+    protected _onDestroy(): void;
+    _cloneTo(dest: Component): void;
+}

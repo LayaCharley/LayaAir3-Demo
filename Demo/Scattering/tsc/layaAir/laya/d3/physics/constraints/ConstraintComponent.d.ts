@@ -1,0 +1,30 @@
+import { Component } from "../../../components/Component";
+import { Rigidbody3D } from "../Rigidbody3D";
+import { PhysicsSimulation } from "../PhysicsSimulation";
+import { Vector3 } from "../../../maths/Vector3";
+export declare class ConstraintComponent extends Component {
+    disableCollisionsBetweenLinkedBodies: boolean;
+    get appliedImpulse(): number;
+    get connectedBody(): Rigidbody3D;
+    get ownBody(): Rigidbody3D;
+    get currentForce(): Vector3;
+    get currentTorque(): Vector3;
+    get breakForce(): number;
+    set breakForce(value: number);
+    get breakTorque(): number;
+    set breakTorque(value: number);
+    set anchor(value: Vector3);
+    get anchor(): Vector3;
+    set connectAnchor(value: Vector3);
+    get connectAnchor(): Vector3;
+    constructor(constraintType: number);
+    setOverrideNumSolverIterations(overideNumIterations: number): void;
+    setConstraintEnabled(enable: boolean): void;
+    setFrames(): void;
+    setConnectRigidBody(ownerRigid: Rigidbody3D, connectRigidBody: Rigidbody3D): void;
+    _setConnectRigidBody(A: Rigidbody3D, B: Rigidbody3D): void;
+    getcurrentForce(out: Vector3): void;
+    getPhysicsSimulation(): PhysicsSimulation;
+    getcurrentTorque(out: Vector3): void;
+    protected _onDestroy(): void;
+}

@@ -1,0 +1,33 @@
+import { Matrix4x4 } from "../../maths/Matrix4x4";
+import { Vector3 } from "../../maths/Vector3";
+import { IClone } from "../../utils/IClone";
+import { BoundBox } from "./BoundBox";
+export declare class Bounds implements IClone {
+    static merge(box1: Bounds, box2: Bounds, out: Bounds): void;
+    static containPoint(box: Bounds, point: Vector3): boolean;
+    get min(): Vector3;
+    set min(value: Vector3);
+    get max(): Vector3;
+    set max(value: Vector3);
+    setMin(value: Vector3): void;
+    getMin(): Vector3;
+    setMax(value: Vector3): void;
+    getMax(): Vector3;
+    setCenter(value: Vector3): void;
+    getCenter(): Vector3;
+    setExtent(value: Vector3): void;
+    getExtent(): Vector3;
+    constructor(min?: Vector3, max?: Vector3);
+    protected _getUpdateFlag(type: number): boolean;
+    protected _setUpdateFlag(type: number, value: boolean): void;
+    protected _getCenter(min: Vector3, max: Vector3, out: Vector3): void;
+    protected _getExtent(min: Vector3, max: Vector3, out: Vector3): void;
+    protected _getMin(center: Vector3, extent: Vector3, out: Vector3): void;
+    protected _getMax(center: Vector3, extent: Vector3, out: Vector3): void;
+    protected _rotateExtents(extents: Vector3, rotation: Matrix4x4, out: Vector3): void;
+    getCorners(corners: Vector3[]): void;
+    getBoundBox(box: BoundBox): void;
+    calculateBoundsintersection(bounds: Bounds): number;
+    cloneTo(destObject: any): void;
+    clone(): any;
+}

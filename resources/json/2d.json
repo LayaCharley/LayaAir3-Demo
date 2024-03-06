@@ -1,0 +1,640 @@
+{
+    "demoList": [
+        {
+            "title": "Sprite",
+            "content": [
+                {
+                    "name": "Display Image",
+                    "scene": "Sprite/Sprite_DisplayImage",
+                    "desc": "Sprite.loadImage can directly load from external sources, or read from the buffer. Graphics.drawTexture draws the texture. If Sprite.loadImage is used to display an image from an atlas, the atlas must have been loaded"
+                },
+                {
+                    "name": "Use Binary Image",
+                    "scene": "Sprite/Sprite_BinaryImage",
+                    "desc": "Load binary data, and select the image data ArrayBuffer, create an Image's Blob object, convert to Base64 or Texture2D",
+                    "minigame": false
+                },
+                {
+                    "name": "Screen Capture",
+                    "scene": "Sprite/Sprite_ScreenShot",
+                    "desc": "Sprite supports screen capture",
+                    "minigame": false
+                },
+                {
+                    "name": "Container",
+                    "scene": "Sprite/Sprite_Container",
+                    "desc": "Sprite can serve as a container for other display objects"
+                },
+                {
+                    "name": "Rotate and Scale",
+                    "scene": "Sprite/Sprite_RoateAndScale",
+                    "desc": "Set the rotation angle and scaling factor of the Sprite"
+                },
+                {
+                    "name": "Draw Path Based on Data",
+                    "scene": "Sprite/Sprite_DrawPath",
+                    "desc": "drawPath can draw path points"
+                },
+                {
+                    "name": "Mask - Magnifying Glass",
+                    "scene": "Sprite/Sprite_MagnifyingGlass",
+                    "desc": "Move the mouse to view the magnified effect"
+                },
+                {
+                    "name": "Draw Various Shapes",
+                    "scene": "Sprite/Sprite_DrawShapes",
+                    "desc": "Use Graphics to draw vector graphics"
+                },
+                {
+                    "name": "Cache as Static Image",
+                    "scene": "Sprite/Sprite_Cache",
+                    "desc": "Caching multiple display objects into a static image can greatly improve rendering efficiency, refer to the documentation for precautions"
+                },
+                {
+                    "name": "Node Control",
+                    "scene": "Sprite/Sprite_NodeControl",
+                    "desc": "Change self and child appearance by controlling the container"
+                },
+                {
+                    "name": "Pivot",
+                    "scene": "Sprite/Sprite_Pivot",
+                    "desc": "Changing pivot can control the center of rotation and scaling"
+                },
+                {
+                    "name": "Switch Texture",
+                    "scene": "Sprite/Sprite_SwitchTexture",
+                    "desc": "Click the monkey to switch textures. Here using graphics.drawTexture, loadImage can also be used"
+                },
+                {
+                    "name": "Newbie Guide",
+                    "scene": "Sprite/Sprite_Guide",
+                    "desc": "Simulate the process guide for game introduction"
+                }
+            ]
+        },
+        {
+            "title": "Animation",
+            "content": [
+                {
+                    "name": "SWF Animation",
+                    "scene": "Animation/Animation_SWF",
+                    "desc": "MovieClip can load and play SWF animations. SWFs are created by Flash IDE, such SWFs cannot contain code"
+                },
+                {
+                    "name": "Atlas Animation",
+                    "scene": "Animation/Animation_Altas",
+                    "desc": "Animation can load and play atlas animations. Atlas can be exported using LayaAir IDE or TexturePacker"
+                }
+            ]
+        },
+        {
+            "title": "Bone Animation",
+            "content": [
+                {
+                    "name": "Multi-texture",
+                    "scene": "Skeleton/Skeleton_MultiTexture",
+                    "desc": ""
+                },
+                {
+                    "name": "Spine Event",
+                    "scene": "Skeleton/Skeleton_SpineEvent",
+                    "desc": ""
+                },
+                {
+                    "name": "Rubber Man",
+                    "scene": "Skeleton/Skeleton_SpineStretchyman",
+                    "desc": ""
+                },
+                {
+                    "name": "Vines",
+                    "scene": "Skeleton/Skeleton_SpineVine",
+                    "desc": ""
+                },
+                {
+                    "name": "Change Outfit",
+                    "scene": "Skeleton/Skeleton_ChangeSkin",
+                    "desc": ""
+                },
+                {
+                    "name": "Adapted Version of Spine",
+                    "scene": "Skeleton/Skeleton_SpineAdapted",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Blend Mode",
+            "content": [
+                {
+                    "name": "Lighter",
+                    "scene": "BlendMode/BlendMode_Lighter",
+                    "desc": "Set blendMode to specify the blending mode"
+                }
+            ]
+        },
+        {
+            "title": "Tiled Map",
+            "content": [
+                {
+                    "name": "Map with Animation",
+                    "scene": "TiledMap/TiledMap_AnimationTile",
+                    "desc": ""
+                },
+                {
+                    "name": "Isometric Map",
+                    "scene": "TiledMap/TiledMap_IsometricWorld",
+                    "desc": ""
+                },
+                {
+                    "name": "Perspective Wall",
+                    "scene": "TiledMap/TiledMap_PerspectiveWall",
+                    "desc": ""
+                },
+                {
+                    "name": "Scrolling Map",
+                    "scene": "TiledMap/TiledMap_SimpleDemo",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Filters",
+            "content": [
+                {
+                    "name": "Glow Filter",
+                    "scene": "Filters/Filters_Glow",
+                    "desc": ""
+                },
+                {
+                    "name": "Blur Filter",
+                    "scene": "Filters/Filters_Blur",
+                    "desc": ""
+                },
+                {
+                    "name": "Color Filter",
+                    "scene": "Filters/Filters_Color",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Audio",
+            "content": [
+                {
+                    "name": "Play Demonstration",
+                    "scene": "Sound/Sound_SimpleDemo",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Text",
+            "content": [
+                {
+                    "name": "Auto Adjust Text Size",
+                    "scene": "Text/Text_AutoSize",
+                    "desc": "autosize can adapt its size according to the text content"
+                },
+                {
+                    "name": "Bitmap Font",
+                    "scene": "Text/Text_BitmapFont",
+                    "desc": "Use BitmapFont to load and display bitmap fonts",
+                    "minigame": false
+                },
+                {
+                    "name": "Complex Text Styles",
+                    "scene": "Text/Text_ComplexStyle",
+                    "desc": "Multiple settings such as alignment, font size, font, bold, line spacing, stroke, border, etc."
+                },
+                {
+                    "name": "Prohibit Editing",
+                    "scene": "Text/Text_Editable",
+                    "desc": "Effective only on PC, making the file non-editable, only allowing copying"
+                },
+                {
+                    "name": "Overflow",
+                    "scene": "Text/Text_Overflow",
+                    "desc": "Set overflow to define the behavior of text overflow. 'visible' does not clip. 'scroll' does not display characters outside the text field and supports the scroll interface. 'hidden' does not display characters that exceed the text field. Performance from high to low: hidden > visible > scroll"
+                },
+                {
+                    "name": "Underline",
+                    "scene": "Text/Text_Underline",
+                    "desc": "Set underline and underlineColor"
+                },
+                {
+                    "name": "HTML Text",
+                    "scene": "Text/Text_HTML",
+                    "desc": ""
+                },
+                {
+                    "name": "UBB Text",
+                    "scene": "Text/Text_UBB",
+                    "desc": ""
+                },
+                {
+                    "name": "Single Line Input",
+                    "scene": "Text/Text_InputSingleline",
+                    "desc": ""
+                },
+                {
+                    "name": "Multi-line Input",
+                    "scene": "Text/Text_InputMultiline",
+                    "desc": "Multi-line input box can use the Enter key"
+                },
+                {
+                    "name": "Limit Number of Characters",
+                    "scene": "Text/Text_MaxChars",
+                    "desc": "Set maxChars to limit the number of characters"
+                },
+                {
+                    "name": "Character Restriction",
+                    "scene": "Text/Text_Restrict",
+                    "desc": "Set restrict to limit characters"
+                },
+                {
+                    "name": "Scroll Text",
+                    "scene": "Text/Text_Scroll",
+                    "desc": "Set overflow to scroll, and use the scroll interface to scroll the text"
+                },
+                {
+                    "name": "Auto Line Wrap",
+                    "scene": "Text/Text_WordWrap",
+                    "desc": "Set wordWrap to true to enable text wrap"
+                }
+            ]
+        },
+        {
+            "title": "UI",
+            "content": [
+                {
+                    "name": "Label",
+                    "scene": "UI/UI_Label",
+                    "desc": ""
+                },
+                {
+                    "name": "Button",
+                    "scene": "UI/UI_Button",
+                    "desc": ""
+                },
+                {
+                    "name": "RadioGroup",
+                    "scene": "UI/UI_RadioGroup",
+                    "desc": ""
+                },
+                {
+                    "name": "CheckBox",
+                    "scene": "UI/UI_CheckBox",
+                    "desc": ""
+                },
+                {
+                    "name": "Clip",
+                    "scene": "UI/UI_Clip",
+                    "desc": ""
+                },
+                {
+                    "name": "FontClip",
+                    "scene": "UI/UI_FontClip",
+                    "desc": ""
+                },
+                {
+                    "name": "ColorPicker",
+                    "scene": "UI/UI_ColorPicker",
+                    "desc": ""
+                },
+                {
+                    "name": "ComboBox",
+                    "scene": "UI/UI_ComboBox",
+                    "desc": ""
+                },
+                {
+                    "name": "Dialog",
+                    "scene": "UI/UI_Dialog",
+                    "desc": ""
+                },
+                {
+                    "name": "ScrollBar",
+                    "scene": "UI/UI_ScrollBar",
+                    "desc": ""
+                },
+                {
+                    "name": "Slider",
+                    "scene": "UI/UI_Slider",
+                    "desc": ""
+                },
+                {
+                    "name": "Image",
+                    "scene": "UI/UI_Image",
+                    "desc": ""
+                },
+                {
+                    "name": "List",
+                    "scene": "UI/UI_List",
+                    "desc": ""
+                },
+                {
+                    "name": "Panel",
+                    "scene": "UI/UI_Panel",
+                    "desc": ""
+                },
+                {
+                    "name": "ProgressBar",
+                    "scene": "UI/UI_ProgressBar",
+                    "desc": ""
+                },
+                {
+                    "name": "Tab",
+                    "scene": "UI/UI_Tab",
+                    "desc": ""
+                },
+                {
+                    "name": "Input",
+                    "scene": "UI/UI_Input",
+                    "desc": ""
+                },
+                {
+                    "name": "TextArea",
+                    "scene": "UI/UI_TextArea",
+                    "desc": ""
+                },
+                {
+                    "name": "Tree",
+                    "scene": "UI/UI_Tree",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Timer",
+            "content": [
+                {
+                    "name": "Delayed Call",
+                    "scene": "Timer/Timer_CallLater",
+                    "desc": ""
+                },
+                {
+                    "name": "Delayed Execution",
+                    "scene": "Timer/Timer_DelayExcute",
+                    "desc": ""
+                },
+                {
+                    "name": "Interval Loop",
+                    "scene": "Timer/Timer_Interval",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Tweening",
+            "content": [
+                {
+                    "name": "Simple Tween",
+                    "scene": "Tween/Tween_SimpleSample",
+                    "desc": ""
+                },
+                {
+                    "name": "Letter by Letter Tweening",
+                    "scene": "Tween/Tween_Letters",
+                    "desc": ""
+                },
+                {
+                    "name": "Tweening Functions Demo",
+                    "scene": "Tween/Tween_EaseFunctionsDemo",
+                    "desc": ""
+                },
+                {
+                    "name": "Timeline",
+                    "scene": "Tween/Tween_TimeLine",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "2D Physics",
+            "content": [
+                {
+                    "name": "Compound Colliders",
+                    "scene": "Physics/Physics_Tumbler",
+                    "desc": ""
+                },
+                {
+                    "name": "Collision Filtering",
+                    "scene": "Physics/Physics_CollisionFiltering",
+                    "desc": ""
+                },
+                {
+                    "name": "Collision Events and Sensors",
+                    "scene": "Physics/Physics_CollisionEvent",
+                    "desc": ""
+                },
+                {
+                    "name": "Bridge",
+                    "scene": "Physics/Physics_Bridge",
+                    "desc": ""
+                },
+                {
+                    "name": "Bionic Robots",
+                    "scene": "Physics/Physics_Strandbeests",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Mouse Interaction",
+            "content": [
+                {
+                    "name": "Hold",
+                    "scene": "Interaction/Interaction_Hold",
+                    "desc": "Hold the monkey for two seconds to interact"
+                },
+                {
+                    "name": "Drag",
+                    "scene": "Interaction/Interaction_Drag",
+                    "desc": "Drag the display object, you can see the rebound effect after exceeding the boundary"
+                },
+                {
+                    "name": "Two-finger Rotate (Multi-touch)",
+                    "scene": "Interaction/Interaction_Rotate",
+                    "desc": "Rotate the square with rotation gesture. Please view on a multi-touch supported device."
+                },
+                {
+                    "name": "Two-finger Scale (Multi-touch)",
+                    "scene": "Interaction/Interaction_Scale",
+                    "desc": "Scale the square by pinching or spreading gesture. Please view on a multi-touch supported device."
+                },
+                {
+                    "name": "Slide",
+                    "scene": "Interaction/Interaction_Swipe",
+                    "desc": ""
+                },
+                {
+                    "name": "Custom Event",
+                    "scene": "Interaction/Interaction_CustomEvent",
+                    "desc": "Click the square to trigger a custom rotation event"
+                },
+                {
+                    "name": "Keyboard Interaction",
+                    "scene": "Interaction/Interaction_Keyboard",
+                    "desc": "Hit the keyboard to see corresponding key codes. This example needs to be viewed in a new tab"
+                },
+                {
+                    "name": "Mouse Interaction",
+                    "scene": "Interaction/Interaction_Mouse",
+                    "desc": ""
+                },
+                {
+                    "name": "Correct Interactive Area",
+                    "scene": "Interaction/Interaction_FixInteractiveRegion",
+                    "desc": "The API mouseThrough is misleadingly named. This interface is used to correct the interactive area. After setting, the interactive response area will become the non-blank content boundary area. Click any display object to see the interactive target"
+                }
+            ]
+        },
+        {
+            "title": "Loading",
+            "content": [
+                {
+                    "name": "Destroy Image Resources Used by Texture",
+                    "scene": "Loader/Loader_ClearTextureRes",
+                    "desc": "Destroy the image resources used by Texture, retaining the texture shell. If it is found that the image resource used by texture does not exist when rendering next time, it will automatically recover; compared to clearRes, clearTextureRes just cleans up the image resources used inside the texture without destroying the texture, and can automatically recover the image resources when used again; whereas clearRes completely destroys the texture, causing it to be unusable; clearTextureRes ensures immediate destruction of image resources without worrying about destroying incorrectly, clearRes uses a reference count method for destruction;"
+                },
+                {
+                    "name": "Single Type Resource Loading",
+                    "scene": "Loader/Loader_SingleType",
+                    "desc": ""
+                },
+                {
+                    "name": "Multiple Types Resource Loading",
+                    "scene": "Loader/Loader_MultipleType",
+                    "desc": ""
+                },
+                {
+                    "name": "Loading Sequence",
+                    "scene": "Loader/Loader_Sequence",
+                    "desc": ""
+                },
+                {
+                    "name": "Error Handling and Progress",
+                    "scene": "Loader/Loader_ProgressAndErrorHandle",
+                    "desc": ""
+                }
+            ]
+        },
+        {
+            "title": "Input Device",
+            "content": [
+                {
+                    "name": "Compass",
+                    "scene": "InputDevice/InputDevice_Compasss",
+                    "desc": "Please view on a gyro-supported device. Browsers that can obtain Earth coordinate system can correctly identify orientation, otherwise, when using the device coordinate system, the initial orientation of the device is north. The crosshair in the center of the compass indicates the current orientation"
+                },
+                {
+                    "name": "Shake",
+                    "scene": "InputDevice/InputDevice_Shake",
+                    "desc": "Please view on a gravity-sensing supported device. After shaking three times, device shaking is no longer listened to"
+                },
+                {
+                    "name": "Gluttonous Snake (Gravity Sensing)",
+                    "scene": "InputDevice/InputDevice_GluttonousSnake",
+                    "desc": "Move the snake by tilting the device to hunt and increase length. This snake does not bite itself"
+                }
+            ]
+        },
+        {
+            "title": "Network and Formats",
+            "content": [
+                {
+                    "name": "POST",
+                    "scene": "Network/Network_POST",
+                    "desc": ""
+                },
+                {
+                    "name": "GET",
+                    "scene": "Network/Network_GET",
+                    "desc": ""
+                },
+                {
+                    "name": "XML",
+                    "scene": "Network/Network_XML",
+                    "desc": "Use DOMParser to parse XML, open the console to see the result"
+                },
+                {
+                    "name": "Socket",
+                    "scene": "Network/NetWork_Socket",
+                    "desc": "Since the server uses ws protocol, there will be an error under https protocol"
+                },
+                {
+                    "name": "ProtocolBuffer",
+                    "scene": "Network/Network_ProtocolBuffer",
+                    "desc": "Use protobuf.js (the version demonstrated here is decodeIO's version), view the result in the console",
+                    "minigame": false
+                }
+            ]
+        },
+        {
+            "title": "DOM Elements",
+            "content": [
+                {
+                    "name": "Form Input",
+                    "scene": "DOM/DOM_Form",
+                    "desc": "Using H5 form input API, feel the native input experience",
+                    "minigame": false
+                },
+                {
+                    "name": "Video",
+                    "scene": "DOM/DOM_Video",
+                    "desc": "Using H5 video API, can achieve better performance advantages than canvas rendering",
+                    "minigame": false
+                }
+            ]
+        },
+        {
+            "title": "Performance Test",
+            "content": [
+                {
+                    "name": "Maggots (Enter with Caution)",
+                    "scene": "PerformanceTest/PerformanceTest_Maggots",
+                    "desc": "5000 maggots perform translation, rotation, and scaling in each frame"
+                },
+                {
+                    "name": "Cartoon Characters",
+                    "scene": "PerformanceTest/PerformanceTest_Cartoon",
+                    "desc": "500 characters rotating and moving"
+                },
+                {
+                    "name": "Cartoon Characters 2",
+                    "scene": "PerformanceTest/PerformanceTest_Cartoon2",
+                    "desc": "500 animated characters move in disorder"
+                },
+                {
+                    "name": "Skeleton",
+                    "scene": "PerformanceTest/PerformanceTest_Skeleton",
+                    "desc": "100 skeleton animations. Click to switch actions"
+                }
+            ]
+        },
+        {
+            "title": "Demos from Other Engines",
+            "content": [
+                {
+                    "name": "PIXI_Example_1",
+                    "scene": "PIXI/PIXI_Example_1",
+                    "desc": "Original Pixi.js Demo"
+                },
+                {
+                    "name": "PIXI_Example_2",
+                    "scene": "PIXI/PIXI_Example_2",
+                    "desc": ""
+                },
+                {
+                    "name": "PIXI_Example_3",
+                    "scene": "PIXI/PIXI_Example_3",
+                    "desc": ""
+                },
+                {
+                    "name": "PIXI_Example_4",
+                    "scene": "PIXI/PIXI_Example_4",
+                    "desc": ""
+                }
+            ]
+        }
+    ]
+}

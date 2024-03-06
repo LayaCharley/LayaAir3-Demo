@@ -1,0 +1,35 @@
+import { Texture } from "../resource/Texture";
+import { Clip } from "./Clip";
+export declare class FontClip extends Clip {
+    protected _valueArr: string;
+    protected _indexMap: Record<string, number>;
+    protected _sheet: string;
+    protected _direction: string;
+    protected _spaceX: number;
+    protected _spaceY: number;
+    private _align;
+    private _wordsW;
+    private _wordsH;
+    constructor(skin?: string, sheet?: string);
+    protected loadComplete(url: string, img: Texture): void;
+    get index(): number;
+    set index(value: number);
+    get sheet(): string;
+    set sheet(value: string);
+    get value(): string;
+    set value(value: string);
+    get direction(): string;
+    set direction(value: string);
+    get spaceX(): number;
+    set spaceX(value: number);
+    get spaceY(): number;
+    set spaceY(value: number);
+    set align(v: string);
+    get align(): string;
+    protected changeValue(): void;
+    _setWidth(value: number): void;
+    _setHeight(value: number): void;
+    protected measureWidth(): number;
+    protected measureHeight(): number;
+    destroy(destroyChild?: boolean): void;
+}

@@ -1,0 +1,36 @@
+import { PostProcess } from "../../../component/PostProcess";
+import { PostProcessEffect } from "../PostProcessEffect";
+import { BaseTexture } from "../../../../resource/BaseTexture";
+import { Color } from "../../../../maths/Color";
+export declare class BloomEffect extends PostProcessEffect {
+    static init(): void;
+    static CompositeInit(): void;
+    static __initDefine__(): void;
+    private _color;
+    private _fastMode;
+    private _dirtTexture;
+    get clamp(): number;
+    set clamp(value: number);
+    get color(): Color;
+    set color(value: Color);
+    get fastMode(): boolean;
+    set fastMode(value: boolean);
+    get dirtTexture(): BaseTexture;
+    set dirtTexture(value: BaseTexture);
+    get intensity(): number;
+    set intensity(value: number);
+    get threshold(): number;
+    set threshold(value: number);
+    get softKnee(): number;
+    set softKnee(value: number);
+    get diffusion(): number;
+    set diffusion(value: number);
+    get anamorphicRatio(): number;
+    set anamorphicRatio(value: number);
+    get dirtIntensity(): number;
+    set dirtIntensity(value: number);
+    constructor();
+    effectInit(postprocess: PostProcess): void;
+    getCameraDepthTextureModeFlag(): number;
+    release(postprocess: PostProcess): void;
+}

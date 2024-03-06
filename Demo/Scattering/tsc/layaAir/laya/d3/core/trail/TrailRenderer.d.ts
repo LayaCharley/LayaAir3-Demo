@@ -1,0 +1,33 @@
+import { BaseRender } from "../render/BaseRender";
+import { FloatKeyframe } from "../FloatKeyframe";
+import { Gradient } from "../Gradient";
+import { Component } from "../../../components/Component";
+import { Bounds } from "../../math/Bounds";
+import { TrailTextureMode } from "../TrailTextureMode";
+import { TrailAlignment } from "./TrailAlignment";
+import { Matrix4x4 } from "../../../maths/Matrix4x4";
+export declare class TrailRenderer extends BaseRender {
+    protected _projectionViewWorldMatrix: Matrix4x4;
+    constructor();
+    protected _getcommonUniformMap(): Array<string>;
+    protected _onAdded(): void;
+    get time(): number;
+    set time(value: number);
+    get minVertexDistance(): number;
+    set minVertexDistance(value: number);
+    get widthMultiplier(): number;
+    set widthMultiplier(value: number);
+    get widthCurve(): FloatKeyframe[];
+    set widthCurve(value: FloatKeyframe[]);
+    get colorGradient(): Gradient;
+    set colorGradient(value: Gradient);
+    get textureMode(): TrailTextureMode;
+    set textureMode(value: TrailTextureMode);
+    get alignment(): TrailAlignment;
+    set alignment(value: TrailAlignment);
+    protected _onEnable(): void;
+    onUpdate(): void;
+    get bounds(): Bounds;
+    clear(): void;
+    _cloneTo(dest: Component): void;
+}

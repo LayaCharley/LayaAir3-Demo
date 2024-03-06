@@ -1,0 +1,38 @@
+import { GradientDataNumber } from "./GradientDataNumber";
+import { IClone } from "../../../../utils/IClone";
+import { Vector3 } from "../../../../maths/Vector3";
+export declare class GradientVelocity implements IClone {
+    static createByConstant(constant: Vector3): GradientVelocity;
+    static createByGradient(gradientX: GradientDataNumber, gradientY: GradientDataNumber, gradientZ: GradientDataNumber): GradientVelocity;
+    static createByRandomTwoConstant(constantMin: Vector3, constantMax: Vector3): GradientVelocity;
+    static createByRandomTwoGradient(gradientXMin: GradientDataNumber, gradientXMax: GradientDataNumber, gradientYMin: GradientDataNumber, gradientYMax: GradientDataNumber, gradientZMin: GradientDataNumber, gradientZMax: GradientDataNumber): GradientVelocity;
+    private _type;
+    private _constant;
+    private _gradientX;
+    private _gradientY;
+    private _gradientZ;
+    private _constantMin;
+    private _constantMax;
+    private _gradientXMin;
+    private _gradientXMax;
+    private _gradientYMin;
+    private _gradientYMax;
+    private _gradientZMin;
+    private _gradientZMax;
+    get type(): number;
+    get constant(): Vector3;
+    get gradientX(): GradientDataNumber;
+    get gradientY(): GradientDataNumber;
+    get gradientZ(): GradientDataNumber;
+    get constantMin(): Vector3;
+    get constantMax(): Vector3;
+    get gradientXMin(): GradientDataNumber;
+    get gradientXMax(): GradientDataNumber;
+    get gradientYMin(): GradientDataNumber;
+    get gradientYMax(): GradientDataNumber;
+    get gradientZMin(): GradientDataNumber;
+    get gradientZMax(): GradientDataNumber;
+    constructor();
+    cloneTo(destObject: any): void;
+    clone(): any;
+}

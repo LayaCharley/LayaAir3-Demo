@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/media/Sound.ts"],"names":[],"mappings":"AACA,OAAO,EAAE,eAAe,EAAE,MAAM,2BAA2B,CAAA;AAM3D,MAAM,OAAO,KAAM,SAAQ,eAAe;IAMtC,IAAI,CAAC,GAAW;IAEhB,CAAC;IAQD,IAAI,CAAC,YAAoB,CAAC,EAAE,QAAgB,CAAC;QACzC,OAAO,IAAI,CAAC;IAChB,CAAC;IAKD,IAAI,QAAQ;QACR,OAAO,CAAC,CAAC;IACb,CAAC;IAKD,OAAO;IAEP,CAAC;CACJ","file":"Sound.js","sourceRoot":"../../"}

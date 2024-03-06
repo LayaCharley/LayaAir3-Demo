@@ -1,0 +1,43 @@
+import { Color } from "../../maths/Color";
+import { BaseTexture } from "../../resource/BaseTexture";
+import { BufferTargetType, BufferUsage } from "../RenderEnum/BufferTargetType";
+import { RenderCapable } from "../RenderEnum/RenderCapable";
+import { RenderClearFlag } from "../RenderEnum/RenderClearFlag";
+import { RenderParams } from "../RenderEnum/RenderParams";
+import { ShaderDataType } from "../RenderShader/ShaderData";
+import { RenderStateCommand } from "../RenderStateCommand";
+import { IRender2DContext } from "./IRender2DContext";
+import { IRenderBuffer } from "./IRenderBuffer";
+import { IRenderDrawContext } from "./IRenderDrawContext";
+import { IRenderOBJCreate } from "./IRenderOBJCreate";
+import { IRenderShaderInstance } from "./IRenderShaderInstance";
+import { IRenderVertexState } from "./IRenderVertexState";
+import { ITextureContext } from "./ITextureContext";
+export interface IRenderEngine {
+    _context: any;
+    initRenderEngine(canvas: any): void;
+    applyRenderStateCMD(cmd: RenderStateCommand): void;
+    viewport(x: number, y: number, width: number, height: number): void;
+    scissor(x: number, y: number, width: number, height: number): void;
+    colorMask(r: boolean, g: boolean, b: boolean, a: boolean): void;
+    copySubFrameBuffertoTex(texture: BaseTexture, level: number, xoffset: number, yoffset: number, x: number, y: number, width: number, height: number): void;
+    bindTexture(texture: BaseTexture): void;
+    clearRenderTexture(clearFlag: RenderClearFlag | number, clearcolor: Color, clearDepth: number): void;
+    scissorTest(value: boolean): void;
+    propertyNameToID(name: string): number;
+    propertyIDToName(id: number): string;
+    getParams(params: RenderParams): number;
+    getCapable(capatableType: RenderCapable): boolean;
+    getTextureContext(): ITextureContext;
+    getDrawContext(): IRenderDrawContext;
+    get2DRenderContext(): IRender2DContext;
+    getCreateRenderOBJContext(): IRenderOBJCreate;
+    createRenderStateComand(): RenderStateCommand;
+    createShaderInstance(vs: string, ps: string, attributeMap: {
+        [name: string]: [number, ShaderDataType];
+    }): IRenderShaderInstance;
+    createBuffer(targetType: BufferTargetType, bufferUsageType: BufferUsage): IRenderBuffer;
+    createVertexState(): IRenderVertexState;
+    getUBOPointer(name: string): number;
+    unbindVertexState(): void;
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/loaders/NullLoader.ts"],"names":[],"mappings":"AAAA,OAAO,EAA8B,MAAM,EAAE,MAAM,eAAe,CAAC;AAEnE,MAAM,OAAO,UAAU;IACnB,IAAI,CAAC,IAAe;QAChB,OAAO,OAAO,CAAC,OAAO,CAAC,IAAI,CAAC,CAAC;IACjC,CAAC;CACJ;AAED,MAAM,CAAC,cAAc,CAAC,CAAC,UAAU,CAAC,EAAE,UAAU,CAAC,CAAC","file":"NullLoader.js","sourceRoot":"../../"}

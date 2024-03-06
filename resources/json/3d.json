@@ -1,0 +1,581 @@
+{
+  "demoList": [
+    {
+      "title": "Resource",
+      "content": [
+        {
+          "name": "Resource Loading",
+          "scene": "Resource/LoadResourceDemo",
+          "desc": ""
+        },
+        {
+          "name": "Release Video Memory",
+          "scene": "Resource/GarbageCollection",
+          "desc": ""
+        },
+        {
+          "name": "Load Fbx Resource",
+          "scene": "Resource/LoadFbxRosource",
+          "desc": ""
+        },
+        {
+          "name": "Load Gltf Resource",
+          "scene": "Resource/LoadGltfRosource",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Scene3D",
+      "content": [
+        {
+          "name": "Scene Loading",
+          "scene": "Scene3D/SceneLoad1",
+          "desc": ""
+        },
+        {
+          "name": "Environmental Reflection",
+          "scene": "Scene3D/EnvironmentalReflection",
+          "desc": "Loads the skybox cubemap baked in advance in the scene"
+        },
+        {
+          "name": "Switching Ambient Light",
+          "scene": "Scene3D/GriendSkyAmbientDemo",
+          "desc": "Uses spherical harmonic lighting, provided that a skybox is set in the scene and baked in ReflectionProbe"
+        }
+      ]
+    },
+    {
+      "title": "Camera",
+      "content": [
+        {
+          "name": "Switch Background",
+          "scene": "Camera/CameraDemo",
+          "desc": ""
+        },
+        {
+          "name": "Orthographic Camera",
+          "scene": "Camera/OrthographicCamera",
+          "desc": ""
+        },
+        {
+          "name": "Camera Target Capture",
+          "scene": "Camera/CameraLookAt",
+          "desc": ""
+        },
+        {
+          "name": "Multiple Cameras",
+          "scene": "Camera/MultiCamera",
+          "desc": ""
+        },
+        {
+          "name": "Creating Ray",
+          "scene": "Camera/CameraRay",
+          "desc": ""
+        },
+        {
+          "name": "Visible Mask Layer",
+          "scene": "Camera/CameraLayer",
+          "desc": ""
+        },
+        {
+          "name": "3D Space to 2D Space",
+          "scene": "Camera/D3SpaceToD2Space",
+          "desc": ""
+        },
+        {
+          "name": "Pick Pixel",
+          "scene": "Camera/PickPixel",
+          "desc": ""
+        },
+        {
+          "name": "Multisampling",
+          "scene": "Camera/CameraMSAADemo",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Lighting",
+      "content": [
+        {
+          "name": "Directional Light",
+          "scene": "Light/DirectionLightDemo",
+          "desc": ""
+        },
+        {
+          "name": "Point Light",
+          "scene": "Light/PointLightDemo",
+          "desc": ""
+        },
+        {
+          "name": "Spotlight",
+          "scene": "Light/SpotLightDemo",
+          "desc": ""
+        },
+        {
+          "name": "Real-Time Shadow",
+          "scene": "Light/RealTimeShadow",
+          "desc": ""
+        },
+        {
+          "name": "Spot Real-Time Shadow",
+          "scene": "Light/SpotLightShadowMap",
+          "desc": ""
+        },
+        {
+          "name": "Multiple Light Sources",
+          "scene": "Light/MultiLight",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "3D Sprites",
+      "content": [
+        {
+          "name": "Skinned Sprite",
+          "scene": "Sprite3D/SkinnedMeshSprite3DDemo",
+          "desc": ""
+        },
+        {
+          "name": "Parent-Child Relationship",
+          "scene": "Sprite3D/Sprite3DParent",
+          "desc": ""
+        },
+        {
+          "name": "Transformation Example",
+          "scene": "Sprite3D/TransformDemo",
+          "desc": ""
+        },
+        {
+          "name": "Clone Sprite",
+          "scene": "Sprite3D/Sprite3DClone",
+          "desc": ""
+        },
+        {
+          "name": "Pixel Line Sprite",
+          "scene": "Sprite3D/PixelLineSprite3DDemo",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Mesh",
+      "content": [
+        {
+          "name": "Mesh Loading",
+          "scene": "Mesh/MeshLoad",
+          "desc": ""
+        },
+        {
+          "name": "Custom Mesh",
+          "scene": "Mesh/CustomMesh",
+          "desc": ""
+        },
+        {
+          "name": "Switch Mesh",
+          "scene": "Mesh/ChangeMesh",
+          "desc": ""
+        },
+        {
+          "name": "BlendShape",
+          "scene": "Mesh/BlendShape",
+          "desc": "Not supported to control the model's action in WebGL1"
+        }
+      ]
+    },
+    {
+      "title": "Material",
+      "content": [
+        {
+          "name": "Material Example",
+          "scene": "Material/MaterialDemo",
+          "desc": ""
+        },
+        {
+          "name": "BlinnPhong-Material Loading",
+          "scene": "Material/BlinnPhongMaterialLoad",
+          "desc": ""
+        },
+        {
+          "name": "BlinnPhong-Diffuse Map",
+          "scene": "Material/BlinnPhong_DiffuseMap",
+          "desc": ""
+        },
+        {
+          "name": "BlinnPhong-Normal Map",
+          "scene": "Material/BlinnPhong_NormalMap",
+          "desc": ""
+        },
+        {
+          "name": "BlinnPhong-Specular Map",
+          "scene": "Material/BlinnPhong_SpecularMap",
+          "desc": ""
+        },
+        {
+          "name": "PBR Material",
+          "scene": "Material/PBRMaterialDemo",
+          "desc": ""
+        },
+        {
+          "name": "PBR-Coat Material",
+          "scene": "Material/PBRCoatMaterialDemo",
+          "desc": ""
+        },
+        {
+          "name": "Effect Material",
+          "scene": "Material/EffectMaterialDemo",
+          "desc": ""
+        },
+        {
+          "name": "Unlit Material",
+          "scene": "Material/UnlitMaterialDemo",
+          "desc": ""
+        },
+        {
+          "name": "Stencil Material",
+          "scene": "Material/StencilDemo",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Texture",
+      "content": [
+        {
+          "name": "Texture Example",
+          "scene": "Texture/TextureDemo",
+          "desc": ""
+        },
+        {
+          "name": "Texture Compression",
+          "scene": "Texture/TextureGPUCompression",
+          "desc": ""
+        },
+        {
+          "name": "Half-float Texture",
+          "scene": "Texture/HalfFloatTexture",
+          "desc": ""
+        },
+        {
+          "name": "GPU Compression ASTC",
+          "scene": "Texture/GPUCompression_ASTC",
+          "desc": ""
+        },
+        {
+          "name": "GPU Compression ETC2",
+          "scene": "Texture/GPUCompression_ETC2",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Animation",
+      "content": [
+        {
+          "name": "Animation Example",
+          "scene": "Animation/AnimatorDemo",
+          "desc": ""
+        },
+        {
+          "name": "Animation State Script",
+          "scene": "Animation/AnimatorStateScriptDemo",
+          "desc": ""
+        },
+        {
+          "name": "Material Animation",
+          "scene": "Animation/MaterialAnimation",
+          "desc": ""
+        },
+        {
+          "name": "Rigidbody Animation",
+          "scene": "Animation/RigidbodyAnimationDemo",
+          "desc": ""
+        },
+        {
+          "name": "Camera Animation",
+          "scene": "Animation/CameraAnimation",
+          "desc": ""
+        },
+        {
+          "name": "Skeleton Animation Mask",
+          "scene": "Animation/SkeletonMask",
+          "desc": ""
+        },
+        {
+          "name": "Pre-baked Skeleton Animation",
+          "scene": "Animation/SimpleSkinAnimationInstance",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Physics System",
+      "content": [
+        {
+          "name": "Basic Collider",
+          "scene": "PhysicsWorld/PhysicsWorld_BaseCollider",
+          "desc": ""
+        },
+        {
+          "name": "Character Collider",
+          "scene": "PhysicsWorld/PhysicsWorld_Character",
+          "desc": ""
+        },
+        {
+          "name": "Collider Filter",
+          "scene": "PhysicsWorld/PhysicsWorld_CollisionFiflter",
+          "desc": ""
+        },
+        {
+          "name": "Continuous Collision Detection",
+          "scene": "PhysicsWorld/PhysicsWorld_ContinueCollisionDetection",
+          "desc": ""
+        },
+        {
+          "name": "Rigidbody Collision",
+          "scene": "PhysicsWorld/PhysicsWorld_Kinematic",
+          "desc": ""
+        },
+        {
+          "name": "Mesh Collider",
+          "scene": "PhysicsWorld/PhysicsWorld_MeshCollider",
+          "desc": ""
+        },
+        {
+          "name": "Ray Shape Cast",
+          "scene": "PhysicsWorld/PhysicsWorld_RayShapeCast",
+          "desc": ""
+        },
+        {
+          "name": "Trigger and Collision Event",
+          "scene": "PhysicsWorld/PhysicsWorld_TriggerAndCollisionEvent",
+          "desc": ""
+        },
+        {
+          "name": "Selecting Objects",
+          "scene": "PhysicsWorld/PhysicsWorld_BuildingBlocks",
+          "desc": ""
+        },
+        {
+          "name": "Fixed Joint",
+          "scene": "PhysicsWorld/PhysicsWorld_ConstraintFixedJoint",
+          "desc": ""
+        },
+        {
+          "name": "Configurable Joint",
+          "scene": "PhysicsWorld/PhysicsWorld_ConfigurableJoint",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Mouse Interaction",
+      "content": [
+        {
+          "name": "Mouse Interaction",
+          "scene": "Interaction/MouseInteraction",
+          "desc": ""
+        },
+        {
+          "name": "Multi-touch",
+          "scene": "Interaction/MultiTouch",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Sky",
+      "content": [
+        {
+          "name": "Sky Box",
+          "scene": "Sky/Sky_SkyBox",
+          "desc": ""
+        },
+        {
+          "name": "Procedural Sky",
+          "scene": "Sky/Sky_Procedural",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Particle System",
+      "content": [
+        {
+          "name": "Eternal Light",
+          "scene": "Particle/Particle_EternalLight",
+          "desc": ""
+        },
+        {
+          "name": "Burning Ground",
+          "scene": "Particle/Particle_BurningGround",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Trail Example",
+      "content": [
+        {
+          "name": "Trail Example",
+          "scene": "Trail/TrailRender",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Script",
+      "content": [
+        {
+          "name": "Script Example",
+          "scene": "Script/ScriptDemo",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Custom Shader",
+      "content": [
+        {
+          "name": "Simple Shader",
+          "scene": "Shader/Shader_Simple",
+          "desc": ""
+        },
+        {
+          "name": "Glowing Edge Shader",
+          "scene": "Shader/Shader_GlowingEdge",
+          "desc": ""
+        },
+        {
+          "name": "Outline Shader",
+          "scene": "Shader/Shader_MultiplePassOutline",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Post Process",
+      "content": [
+        {
+          "name": "Post-process Blur",
+          "scene": "PostProcess/PostProcess_Blur",
+          "desc": ""
+        },
+        {
+          "name": "Post-process AO Example",
+          "scene": "PostProcess/PostProcessAO",
+          "desc": ""
+        },
+        {
+          "name": "Post-process Bloom Example",
+          "scene": "PostProcess/PostProcessBloom",
+          "desc": ""
+        },
+        {
+          "name": "Post-process Depth of Field Example",
+          "scene": "PostProcess/PostProcessDoF",
+          "desc": ""
+        },
+        {
+          "name": "Post-process Edge",
+          "scene": "PostProcess/PostProcess_Edge",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Performance Test",
+      "content": [
+        {
+          "name": "Dynamic Batching",
+          "scene": "PerformanceTest/DynamicBatchTest",
+          "desc": ""
+        }
+      ]
+    },
+    {
+      "title": "Advanced Applications",
+      "content": [
+        {
+          "name": "Camera Key and Joystick Operation Example",
+          "scene": "Advance/CameraInteraction",
+          "desc": ""
+        },
+        {
+          "name": "Add 3D on 2D Scene",
+          "scene": "Advance/Scene2DPlayer3D",
+          "desc": ""
+        },
+        {
+          "name": "Add 2D Nodes on 3D Scene",
+          "scene": "Advance/Secne3DPlayer2D",
+          "desc": ""
+        },
+        {
+          "name": "Video Texture",
+          "scene": "Advance/VideoPlayIn3DWorld",
+          "desc": "",
+          "minigame": false
+        },
+        {
+          "name": "Grass",
+          "scene": "Advance/GrassDemo",
+          "desc": "Implements grass effect using instance"
+        },
+        {
+          "name": "Instance Rendering",
+          "scene": "Advance/CommandBuffer_DrawCustomInstance",
+          "desc": ""
+        },
+        {
+          "name": "Camera Depth Texture",
+          "scene": "Advance/CameraDepthModeTextureDemo",
+          "desc": ""
+        },
+        {
+          "name": "Outline",
+          "scene": "Advance/CommandBuffer_Outline",
+          "desc": ""
+        },
+        {
+          "name": "Reflection Probe",
+          "scene": "Advance/ReflectionProbe",
+          "desc": ""
+        },
+        {
+          "name": "Sub-Surface-Scattering",
+          "scene": "Advance/SeparableSSS_RenderDemo",
+          "desc": ""
+        },
+        {
+          "name": "3D Text Texture",
+          "scene": "Advance/showFont",
+          "desc": ""
+        },
+        {
+          "name": "Laya3D and Web Page Integration",
+          "scene": "Advance/Laya3DCombineHtml",
+          "desc": "",
+          "minigame": false
+        }
+      ]
+    },
+    {
+      "title": "Showcase",
+      "content": [
+        {
+          "name": "Damaged Helmet Show",
+          "scene": "Show/DamagedHelmetModelShow",
+          "desc": ""
+        },
+        {
+          "name": "PRR Gun Show",
+          "scene": "Show/GunDemo",
+          "desc": ""
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/webgl/shader/BaseShader.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,QAAQ,EAAE,MAAM,yBAAyB,CAAA;AAMlD,MAAM,OAAO,UAAW,SAAQ,QAAQ;IAIpC;QACI,KAAK,EAAE,CAAC;IAGZ,CAAC;CAEJ","file":"BaseShader.js","sourceRoot":"../../../"}

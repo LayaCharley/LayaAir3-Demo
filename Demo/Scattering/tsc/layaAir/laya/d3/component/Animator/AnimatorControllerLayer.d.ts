@@ -1,0 +1,30 @@
+import { IClone } from "../../../utils/IClone";
+import { AnimatorPlayState } from "./AnimatorPlayState";
+import { AnimatorState } from "./AnimatorState";
+import { AvatarMask } from "./AvatarMask";
+export declare class AnimatorControllerLayer implements IClone {
+    static BLENDINGMODE_OVERRIDE: number;
+    static BLENDINGMODE_ADDTIVE: number;
+    name: string;
+    blendingMode: number;
+    defaultWeight: number;
+    playOnWake: boolean;
+    enable: boolean;
+    get defaultState(): AnimatorState;
+    set defaultState(value: AnimatorState);
+    get avatarMask(): AvatarMask;
+    set avatarMask(value: AvatarMask);
+    private _defaultStateNameCatch;
+    constructor(name: string);
+    _getReferenceCount(): number;
+    _addReference(count?: number): void;
+    _removeReference(count?: number): void;
+    _clearReference(): void;
+    getCurrentPlayState(): AnimatorPlayState;
+    getAnimatorState(name: string): AnimatorState | null;
+    addState(state: AnimatorState): void;
+    removeState(state: AnimatorState): void;
+    destroy(): void;
+    cloneTo(destObject: any): void;
+    clone(): any;
+}

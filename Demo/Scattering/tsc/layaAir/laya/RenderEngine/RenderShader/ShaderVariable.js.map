@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/RenderEngine/RenderShader/ShaderVariable.ts"],"names":[],"mappings":"AAGA,MAAM,OAAO,cAAc;IA2B1B;QACC,IAAI,CAAC,IAAI,GAAG,cAAc,CAAC,OAAO,EAAE,CAAC;QACrC,IAAI,CAAC,SAAS,GAAG,CAAC,CAAC,CAAC;IACrB,CAAC;;AA7BM,sBAAO,GAAW,CAAC,CAAC","file":"ShaderVariable.js","sourceRoot":"../../../"}

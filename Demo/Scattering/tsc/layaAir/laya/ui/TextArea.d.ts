@@ -1,0 +1,36 @@
+import { TextInput } from "./TextInput";
+import { VScrollBar } from "./VScrollBar";
+import { HScrollBar } from "./HScrollBar";
+import { ScrollType } from "./Styles";
+import { Event } from "../events/Event";
+export declare class TextArea extends TextInput {
+    protected _scrollType: ScrollType;
+    protected _vScrollBarSkin: string;
+    protected _hScrollBarSkin: string;
+    protected _vScrollBar: VScrollBar;
+    protected _hScrollBar: HScrollBar;
+    constructor(text?: string);
+    protected _onPostLayout(): void;
+    destroy(destroyChild?: boolean): void;
+    protected initialize(): void;
+    _setWidth(value: number): void;
+    _setHeight(value: number): void;
+    get scrollType(): ScrollType;
+    set scrollType(value: ScrollType);
+    private createHScrollBar;
+    private createVScrollBar;
+    get vScrollBarSkin(): string;
+    set vScrollBarSkin(value: string);
+    get hScrollBarSkin(): string;
+    set hScrollBarSkin(value: string);
+    protected onVBarChanged(e: Event): void;
+    protected onHBarChanged(e: Event): void;
+    get vScrollBar(): VScrollBar;
+    get hScrollBar(): HScrollBar;
+    get maxScrollY(): number;
+    get scrollY(): number;
+    get maxScrollX(): number;
+    get scrollX(): number;
+    private changeScroll;
+    scrollTo(y: number): void;
+}

@@ -1,0 +1,33 @@
+import { Buffer } from "../../RenderEngine/Buffer";
+export declare class Buffer2D {
+    static FLOAT32: number;
+    static SHORT: number;
+    protected _maxsize: number;
+    _upload: boolean;
+    protected _uploadSize: number;
+    protected _bufferSize: number;
+    protected _u8Array: Uint8Array;
+    _floatArray32: Float32Array;
+    _uint32Array: Uint32Array;
+    _uint16Array: Uint16Array;
+    private constBuffer;
+    get bufferLength(): number;
+    set byteLength(value: number);
+    setByteLength(value: number): void;
+    needSize(sz: number): number;
+    constructor(buffer: Buffer);
+    getFloat32Array(): Float32Array;
+    protected _bufferData(): void;
+    protected _bufferSubData(offset?: number, dataStart?: number, dataLength?: number): void;
+    protected _checkArrayUse(): void;
+    _bind_upload(): boolean;
+    _bind_subUpload(offset?: number, dataStart?: number, dataLength?: number): boolean;
+    _resizeBuffer(nsz: number, copy: boolean): Buffer2D;
+    append(data: any): void;
+    appendU16Array(data: Uint16Array, len: number): void;
+    getBuffer(): ArrayBuffer;
+    setNeedUpload(): void;
+    subUpload(offset?: number, dataStart?: number, dataLength?: number): boolean;
+    _disposeResource(): void;
+    clear(): void;
+}

@@ -1,0 +1,38 @@
+import { Label } from "./Label";
+import { Input } from "../display/Input";
+import { AutoBitmap } from "./AutoBitmap";
+export declare class TextInput extends Label {
+    protected _skin: string;
+    _graphics: AutoBitmap;
+    _tf: Input;
+    constructor(text?: string);
+    protected preinitialize(): void;
+    protected createChildren(): void;
+    protected initialize(): void;
+    get skin(): string;
+    set skin(value: string);
+    _setSkin(url: string): Promise<void>;
+    protected _skinLoaded(source: any): void;
+    get sizeGrid(): string;
+    set sizeGrid(value: string);
+    _setWidth(value: number): void;
+    _setHeight(value: number): void;
+    get multiline(): boolean;
+    set multiline(value: boolean);
+    set editable(value: boolean);
+    get editable(): boolean;
+    select(): void;
+    get restrict(): string;
+    set restrict(pattern: string);
+    get prompt(): string;
+    set prompt(value: string);
+    get promptColor(): string;
+    set promptColor(value: string);
+    get maxChars(): number;
+    set maxChars(value: number);
+    get focus(): boolean;
+    set focus(value: boolean);
+    get type(): string;
+    set type(value: string);
+    setSelection(startIndex: number, endIndex: number): void;
+}

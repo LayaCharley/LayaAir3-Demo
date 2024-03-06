@@ -1,0 +1,30 @@
+import { EventDispatcher } from "../../../events/EventDispatcher";
+import { IClone } from "../../../utils/IClone";
+import { AnimationClip } from "../../animation/AnimationClip";
+import { AnimatorStateScript } from "../../animation/AnimatorStateScript";
+import { AnimatorTransition } from "./AnimatorTransition";
+export declare class AnimatorState extends EventDispatcher implements IClone {
+    static EVENT_OnStateEnter: string;
+    static EVENT_OnStateUpdate: string;
+    static EVENT_OnStateExit: string;
+    _isLooping: 0 | 1 | 2;
+    curTransition: AnimatorTransition;
+    name: string;
+    speed: number;
+    clipStart: number;
+    clipEnd: number;
+    cycleOffset: number;
+    get clip(): AnimationClip | null;
+    set clip(value: AnimationClip | null);
+    get islooping(): boolean;
+    get transitions(): AnimatorTransition[];
+    set transitions(value: AnimatorTransition[]);
+    get soloTransitions(): AnimatorTransition[];
+    set soloTransitions(value: AnimatorTransition[]);
+    constructor();
+    addScript(type: typeof AnimatorStateScript): AnimatorStateScript;
+    getScript(type: typeof AnimatorStateScript): AnimatorStateScript | null;
+    getScripts(type: typeof AnimatorStateScript): AnimatorStateScript[] | null;
+    cloneTo(destObject: any): void;
+    clone(): any;
+}

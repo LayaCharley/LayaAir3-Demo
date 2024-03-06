@@ -1,0 +1,32 @@
+import { ArrowLine } from "./ArrowLine";
+import { Rect } from "./Rect";
+import { Sprite } from "laya/display/Sprite";
+export declare class Axis extends Sprite {
+    constructor();
+    xAxis: ArrowLine;
+    yAxis: ArrowLine;
+    controlBox: Rect;
+    _target: Sprite;
+    private _lenType;
+    private _type;
+    set target(tar: Sprite);
+    private updateChanges;
+    set type(lenType: number);
+    get type(): number;
+    switchType(): void;
+    private controlBoxMouseDown;
+    private _point;
+    private dragging;
+    get target(): Sprite;
+    initMe(): void;
+    private clearMoveEvents;
+    private oPoint;
+    private myRotationChanger;
+    private targetRotationChanger;
+    private stageMouseRotationChanger;
+    private controlMouseDown;
+    private getStageMouseRatation;
+    private stageMouseMove;
+    private stageMouseUp;
+    private noticeChange;
+}

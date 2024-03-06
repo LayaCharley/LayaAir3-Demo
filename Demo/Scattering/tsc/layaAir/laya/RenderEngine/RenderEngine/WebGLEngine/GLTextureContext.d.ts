@@ -1,0 +1,83 @@
+import { WebGLInternalTex } from "./WebGLInternalTex";
+import { WebGLInternalRT } from "./WebGLInternalRT";
+import { RenderTargetFormat } from "../../RenderEnum/RenderTargetFormat";
+import { TextureCompareMode } from "../../RenderEnum/TextureCompareMode";
+import { TextureDimension } from "../../RenderEnum/TextureDimension";
+import { TextureFormat } from "../../RenderEnum/TextureFormat";
+import { InternalTexture } from "../../RenderInterface/InternalTexture";
+import { ITextureContext } from "../../RenderInterface/ITextureContext";
+import { GLObject } from "./GLObject";
+import { WebGLEngine } from "./WebGLEngine";
+import { DDSTextureInfo } from "../../DDSTextureInfo";
+import { HDRTextureInfo } from "../../HDRTextureInfo";
+import { KTXTextureInfo } from "../../KTXTextureInfo";
+export declare class GLTextureContext extends GLObject implements ITextureContext {
+    protected _sRGB: any;
+    protected _oesTextureHalfFloat: any;
+    protected _compressdTextureS3tc_srgb: any;
+    protected _compressedTextureEtc1: any;
+    protected _compressedTextureS3tc: any;
+    protected _compressedTextureETC: any;
+    protected _compressedTextureASTC: any;
+    protected _webgl_depth_texture: any;
+    constructor(engine: WebGLEngine);
+    _glParam: {
+        internalFormat: number;
+        format: number;
+        type: number;
+    };
+    glTextureParam(format: TextureFormat, useSRGB: boolean): {
+        internalFormat: number;
+        format: number;
+        type: number;
+    };
+    glRenderTextureParam(format: RenderTargetFormat, useSRGB: boolean): {
+        internalFormat: number;
+        format: number;
+        type: number;
+    };
+    glRenderBufferParam(format: RenderTargetFormat, useSRGB: boolean): {
+        internalFormat: number;
+        attachment: number;
+    };
+    glRenderTargetAttachment(format: RenderTargetFormat): number;
+    protected getTarget(dimension: TextureDimension): number;
+    getFormatPixelsParams(format: TextureFormat): {
+        channels: number;
+        bytesPerPixel: number;
+        dataTypedCons: any;
+        typedSize: number;
+    };
+    getGLtexMemory(tex: WebGLInternalTex, depth?: number): number;
+    getGLRTTexMemory(width: number, height: number, colorFormat: RenderTargetFormat, depthStencilFormat: RenderTargetFormat, generateMipmap: boolean, multiSamples: number, cube: boolean): number;
+    supportSRGB(format: TextureFormat | RenderTargetFormat, mipmap: boolean): boolean;
+    supportGenerateMipmap(format: TextureFormat | RenderTargetFormat): boolean;
+    isSRGBFormat(format: TextureFormat | RenderTargetFormat): boolean;
+    createTextureInternal(dimension: TextureDimension, width: number, height: number, format: TextureFormat, generateMipmap: boolean, sRGB: boolean): InternalTexture;
+    setTextureImageData(texture: WebGLInternalTex, source: HTMLImageElement | HTMLCanvasElement | ImageBitmap, premultiplyAlpha: boolean, invertY: boolean): void;
+    setTextureSubImageData(texture: WebGLInternalTex, source: HTMLImageElement | HTMLCanvasElement | ImageBitmap, x: number, y: number, premultiplyAlpha: boolean, invertY: boolean): void;
+    initVideoTextureData(texture: WebGLInternalTex): void;
+    setTexturePixelsData(texture: WebGLInternalTex, source: ArrayBufferView, premultiplyAlpha: boolean, invertY: boolean): void;
+    setTextureSubPixelsData(texture: WebGLInternalTex, source: ArrayBufferView, mipmapLevel: number, generateMipmap: boolean, xOffset: number, yOffset: number, width: number, height: number, premultiplyAlpha: boolean, invertY: boolean): void;
+    setTextureDDSData(texture: WebGLInternalTex, ddsInfo: DDSTextureInfo): void;
+    setTextureKTXData(texture: WebGLInternalTex, ktxInfo: KTXTextureInfo): void;
+    setTextureHDRData(texture: WebGLInternalTex, hdrInfo: HDRTextureInfo): void;
+    setCubeImageData(texture: WebGLInternalTex, sources: (HTMLImageElement | HTMLCanvasElement | ImageBitmap)[], premultiplyAlpha: boolean, invertY: boolean): void;
+    setCubePixelsData(texture: WebGLInternalTex, source: ArrayBufferView[], premultiplyAlpha: boolean, invertY: boolean): void;
+    setCubeSubPixelData(texture: WebGLInternalTex, source: ArrayBufferView[], mipmapLevel: number, generateMipmap: boolean, xOffset: number, yOffset: number, width: number, height: number, premultiplyAlpha: boolean, invertY: boolean): void;
+    setCubeDDSData(texture: WebGLInternalTex, ddsInfo: DDSTextureInfo): void;
+    setCubeKTXData(texture: WebGLInternalTex, ktxInfo: KTXTextureInfo): void;
+    setTextureCompareMode(texture: WebGLInternalTex, compareMode: TextureCompareMode): TextureCompareMode;
+    bindRenderTarget(renderTarget: WebGLInternalRT, faceIndex?: number): void;
+    bindoutScreenTarget(): void;
+    unbindRenderTarget(renderTarget: WebGLInternalRT): void;
+    createRenderTextureInternal(dimension: TextureDimension, width: number, height: number, format: RenderTargetFormat, generateMipmap: boolean, sRGB: boolean): WebGLInternalTex;
+    createRenderTextureCubeInternal(dimension: TextureDimension, size: number, format: RenderTargetFormat, generateMipmap: boolean, sRGB: boolean): WebGLInternalTex;
+    createRenderTargetInternal(width: number, height: number, colorFormat: RenderTargetFormat, depthStencilFormat: RenderTargetFormat, generateMipmap: boolean, sRGB: boolean, multiSamples: number): WebGLInternalRT;
+    createRenderTargetCubeInternal(size: number, colorFormat: RenderTargetFormat, depthStencilFormat: RenderTargetFormat, generateMipmap: boolean, sRGB: boolean, multiSamples: number): WebGLInternalRT;
+    createRenderbuffer(width: number, height: number, internalFormat: number, samples: number): WebGLRenderbuffer;
+    setupRendertargetTextureAttachment(renderTarget: WebGLInternalRT, texture: WebGLInternalTex): void;
+    readRenderTargetPixelData(renderTarget: WebGLInternalRT, xOffset: number, yOffset: number, width: number, height: number, out: ArrayBufferView): ArrayBufferView;
+    updateVideoTexture(texture: WebGLInternalTex, video: HTMLVideoElement, premultiplyAlpha: boolean, invertY: boolean): void;
+    getRenderTextureData(internalTex: WebGLInternalRT, x: number, y: number, width: number, height: number): ArrayBufferView;
+}

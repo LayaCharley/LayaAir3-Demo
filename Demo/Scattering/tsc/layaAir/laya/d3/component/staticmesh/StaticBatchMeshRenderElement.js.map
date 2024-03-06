@@ -1,0 +1,1 @@
+{"version":3,"sources":["../../../src/layaAir/laya/d3/component/staticmesh/StaticBatchMeshRenderElement.ts"],"names":[],"mappings":"AAAA,OAAO,EAAE,aAAa,EAAE,MAAM,iCAAiC,CAAC;AAKhE,MAAM,OAAO,4BAA6B,SAAQ,aAAa;IAE3D;QACI,KAAK,EAAE,CAAC;IACZ,CAAC;IAED,cAAc;QACV,OAAO,KAAK,CAAC;IACjB,CAAC;CAEJ","file":"StaticBatchMeshRenderElement.js","sourceRoot":"../../../../"}
